@@ -6,6 +6,45 @@
     "zh-CN": "首次公开安装包：随包 OpenSSL 1.1，支持 AI HTTPS 与应用内更新。",
     "en-US": "First public installer: bundled OpenSSL 1.1 for AI HTTPS and in-app updates."
   },
+  "changelog": [
+    {
+      "version": "0.1.8",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "功能",
+            "items": [
+              "应用内检查/下载/安装更新（公开 GitHub 发布页，无需自建服务器）",
+              "随包 OpenSSL 1.1，AI 与更新共用跨平台 Qt Network HTTPS"
+            ]
+          },
+          {
+            "title": "改进",
+            "items": [
+              "关于页「更新内容」弹窗：新版本显示「尚未安装」，点击可标记为待安装",
+              "可跳过有问题的版本，避免误装"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Features",
+            "items": [
+              "In-app check / download / install from the public GitHub releases page",
+              "Bundled OpenSSL 1.1 so AI and updates share the same Qt Network HTTPS stack"
+            ]
+          },
+          {
+            "title": "Improvements",
+            "items": [
+              "About → Update notes: newer builds show Not installed; click to mark for install",
+              "Skip a bad release so it will not be offered again"
+            ]
+          }
+        ]
+      }
+    }
+  ],
   "windows": {
     "x64": {
       "file": "WePicSetup-0.1.8-x64.exe",
