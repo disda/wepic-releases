@@ -1,0 +1,29 @@
+{
+  "version": "0.1.8",
+  "tag": "v0.1.8",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.8",
+  "notes": {
+    "zh-CN": "首次公开安装包：随包 OpenSSL 1.1，支持 AI HTTPS 与应用内更新。",
+    "en-US": "First public installer: bundled OpenSSL 1.1 for AI HTTPS and in-app updates."
+  },
+  "windows": {
+    "x64": {
+      "file": "WePicSetup-0.1.8-x64.exe",
+      "size": 66363537,
+      "sha256": "f01afaefef1680acd0809d9c24fd80aeea465deebb0bc4b5ce1f52ba140618e1",
+      "urls": [
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.8/WePicSetup-0.1.8-x64.exe",
+        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.8/WePicSetup-0.1.8-x64.exe"
+      ]
+    },
+    "x86": {
+      "file": "WePicSetup-0.1.8.exe",
+      "size": 67721884,
+      "sha256": "ef6222d0bbd5368c3df28418e036b88d387164eb748f9e961e9c9e05c9bf9310",
+      "urls": [
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.8/WePicSetup-0.1.8.exe",
+        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.8/WePicSetup-0.1.8.exe"
+      ]
+    }
+  }
+}
