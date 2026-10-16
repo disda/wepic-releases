@@ -1,32 +1,55 @@
 {
-  "version": "0.1.10",
-  "tag": "v0.1.10",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.10",
+  "version": "0.1.11",
+  "tag": "v0.1.11",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
   "notes": {
-    "zh-CN": "更新更省心：下载完不打断使用，关闭后自动装好；界面中英文更完整，浅色主题更清晰。",
-    "en-US": "Updates stay out of your way: download in the background, install when you quit. Fuller bilingual UI and clearer light-theme text."
+    "zh-CN": "修复关闭后仍打开旧版本：下载完成并退出后，会等进程结束再静默安装；支持断点续传。",
+    "en-US": "Fix: quit waits for WePic to exit before silent install so the next launch is new. Downloads can resume after restart."
   },
   "windows": {
     "x64": {
-      "file": "WePicSetup-0.1.10-x64.exe",
-      "size": 66353827,
-      "sha256": "da2c89515d6b6d3d562e9aeaad5692e37c5e6863f1ac0b39d03357d028d2bd74",
+      "file": "WePicSetup-0.1.11-x64.exe",
+      "size": 66355376,
+      "sha256": "246bc9b8d134be23ee69c68b5a8e3d2a454f19d4ca3a981199f5498af9f6a2c7",
       "urls": [
-        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.10/WePicSetup-0.1.10-x64.exe",
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.10/WePicSetup-0.1.10-x64.exe"
+        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11-x64.exe",
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11-x64.exe"
       ]
     },
     "x86": {
-      "file": "WePicSetup-0.1.10.exe",
-      "size": 67692628,
-      "sha256": "425e2c1f392d9fd08aee2a997413a1e9dd0b813a6b2c0b25cde494b11c386dc3",
+      "file": "WePicSetup-0.1.11.exe",
+      "size": 67699409,
+      "sha256": "2bbc6a9dea5a202296f681bb5e093511ddd8590757805d6c1d90ca185b1f149d",
       "urls": [
-        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.10/WePicSetup-0.1.10.exe",
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.10/WePicSetup-0.1.10.exe"
+        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11.exe",
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11.exe"
       ]
     }
   },
   "changelog": [
+    {
+      "version": "0.1.11",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "修复",
+            "items": [
+              "下载完成后关闭再打开仍是旧版本：现已等进程完全退出后再静默安装",
+              "安装包下载中断后可续传，不必从头下"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Fixes",
+            "items": [
+              "After a finished download, quitting no longer left you on the old build—install waits until WePic has fully exited",
+              "Interrupted installer downloads resume instead of starting over"
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.10",
       "sections": {
