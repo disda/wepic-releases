@@ -1,28 +1,49 @@
 {
-  "version": "0.1.8",
-  "tag": "v0.1.8",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.8",
+  "version": "0.1.9",
+  "tag": "v0.1.9",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.9",
   "notes": {
-    "zh-CN": "首次公开安装包：随包 OpenSSL 1.1，支持 AI HTTPS 与应用内更新。",
-    "en-US": "First public installer: bundled OpenSSL 1.1 for AI HTTPS and in-app updates."
+    "zh-CN": "优化应用内更新：可自动检查与下载，更新说明更易读，窗口外观与设置一致。",
+    "en-US": "Smoother in-app updates: auto check and download, clearer release notes, dialog matches Settings."
+  },
+  "windows": {
+    "x64": {
+      "file": "WePicSetup-0.1.9-x64.exe",
+      "size": 66378309,
+      "sha256": "dd10169a5e95b052a2a73f33d4c0171e113814052b291029f723c82ff00f9cd3",
+      "urls": [
+        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.9/WePicSetup-0.1.9-x64.exe",
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.9/WePicSetup-0.1.9-x64.exe"
+      ]
+    },
+    "x86": {
+      "file": "WePicSetup-0.1.9.exe",
+      "size": 67712101,
+      "sha256": "bbf55591a1e4d4b0971324c92f86eb26b88c6e72f1d4d817516a91eeb4d5d4ac",
+      "urls": [
+        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.9/WePicSetup-0.1.9.exe",
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.9/WePicSetup-0.1.9.exe"
+      ]
+    }
   },
   "changelog": [
     {
-      "version": "0.1.8",
+      "version": "0.1.9",
       "sections": {
         "zh-CN": [
           {
             "title": "功能",
             "items": [
-              "应用内检查/下载/安装更新（公开 GitHub 发布页，无需自建服务器）",
-              "随包 OpenSSL 1.1，AI 与更新共用跨平台 Qt Network HTTPS"
+              "启动后可自动检查更新，并在后台下载",
+              "下载完成后可自动安装并重新打开 WePic",
+              "设置 → 关于 可随时查看更新记录"
             ]
           },
           {
             "title": "改进",
             "items": [
-              "关于页「更新内容」弹窗：新版本显示「尚未安装」，点击可标记为待安装",
-              "可跳过有问题的版本，避免误装"
+              "更新窗口外观与设置界面一致",
+              "更新说明改成更通俗的表述，方便了解改了什么"
             ]
           }
         ],
@@ -30,39 +51,57 @@
           {
             "title": "Features",
             "items": [
-              "In-app check / download / install from the public GitHub releases page",
-              "Bundled OpenSSL 1.1 so AI and updates share the same Qt Network HTTPS stack"
+              "Auto-check for updates after launch, with background download",
+              "When ready, install and reopen WePic automatically",
+              "Open update history anytime from Settings → About"
             ]
           },
           {
             "title": "Improvements",
             "items": [
-              "About → Update notes: newer builds show Not installed; click to mark for install",
-              "Skip a bad release so it will not be offered again"
+              "Update window looks consistent with Settings",
+              "Release notes rewritten in plain language"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.8",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "功能",
+            "items": [
+              "支持在应用内检查并安装新版本",
+              "改进联网稳定性，在线功能与更新更可靠"
+            ]
+          },
+          {
+            "title": "改进",
+            "items": [
+              "关于页可查看更新内容",
+              "遇到有问题的版本时可选择跳过"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Features",
+            "items": [
+              "Check and install updates from inside the app",
+              "More reliable online features and update downloads"
+            ]
+          },
+          {
+            "title": "Improvements",
+            "items": [
+              "View update notes from About",
+              "Skip a release you do not want to install"
             ]
           }
         ]
       }
     }
-  ],
-  "windows": {
-    "x64": {
-      "file": "WePicSetup-0.1.8-x64.exe",
-      "size": 66363537,
-      "sha256": "f01afaefef1680acd0809d9c24fd80aeea465deebb0bc4b5ce1f52ba140618e1",
-      "urls": [
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.8/WePicSetup-0.1.8-x64.exe",
-        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.8/WePicSetup-0.1.8-x64.exe"
-      ]
-    },
-    "x86": {
-      "file": "WePicSetup-0.1.8.exe",
-      "size": 67721884,
-      "sha256": "ef6222d0bbd5368c3df28418e036b88d387164eb748f9e961e9c9e05c9bf9310",
-      "urls": [
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.8/WePicSetup-0.1.8.exe",
-        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.8/WePicSetup-0.1.8.exe"
-      ]
-    }
-  }
+  ]
 }
