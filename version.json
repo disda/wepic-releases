@@ -1,32 +1,71 @@
 {
-  "version": "0.1.9",
-  "tag": "v0.1.9",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.9",
+  "version": "0.1.10",
+  "tag": "v0.1.10",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.10",
   "notes": {
-    "zh-CN": "优化应用内更新：可自动检查与下载，更新说明更易读，窗口外观与设置一致。",
-    "en-US": "Smoother in-app updates: auto check and download, clearer release notes, dialog matches Settings."
+    "zh-CN": "更新更省心：下载完不打断使用，关闭后自动装好；界面中英文更完整，浅色主题更清晰。",
+    "en-US": "Updates stay out of your way: download in the background, install when you quit. Fuller bilingual UI and clearer light-theme text."
   },
   "windows": {
     "x64": {
-      "file": "WePicSetup-0.1.9-x64.exe",
-      "size": 66378309,
-      "sha256": "dd10169a5e95b052a2a73f33d4c0171e113814052b291029f723c82ff00f9cd3",
+      "file": "WePicSetup-0.1.10-x64.exe",
+      "size": 66353827,
+      "sha256": "da2c89515d6b6d3d562e9aeaad5692e37c5e6863f1ac0b39d03357d028d2bd74",
       "urls": [
-        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.9/WePicSetup-0.1.9-x64.exe",
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.9/WePicSetup-0.1.9-x64.exe"
+        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.10/WePicSetup-0.1.10-x64.exe",
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.10/WePicSetup-0.1.10-x64.exe"
       ]
     },
     "x86": {
-      "file": "WePicSetup-0.1.9.exe",
-      "size": 67712101,
-      "sha256": "bbf55591a1e4d4b0971324c92f86eb26b88c6e72f1d4d817516a91eeb4d5d4ac",
+      "file": "WePicSetup-0.1.10.exe",
+      "size": 67692628,
+      "sha256": "425e2c1f392d9fd08aee2a997413a1e9dd0b813a6b2c0b25cde494b11c386dc3",
       "urls": [
-        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.9/WePicSetup-0.1.9.exe",
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.9/WePicSetup-0.1.9.exe"
+        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.10/WePicSetup-0.1.10.exe",
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.10/WePicSetup-0.1.10.exe"
       ]
     }
   },
   "changelog": [
+    {
+      "version": "0.1.10",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "功能",
+            "items": [
+              "更新下载完成后不再打断使用；关闭后会静默安装，下次打开即为新版本",
+              "AI 翻译可选择目标语言：中文、英文，或跟随界面语言"
+            ]
+          },
+          {
+            "title": "改进",
+            "items": [
+              "界面中英文切换更完整",
+              "浅色主题下更新记录文字更清晰",
+              "设置与图片信息等窗口体验优化"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Features",
+            "items": [
+              "Updates download in the background without interrupting you; they install when you quit, and the next launch uses the new version",
+              "Choose AI translation target: Chinese, English, or follow the UI language"
+            ]
+          },
+          {
+            "title": "Improvements",
+            "items": [
+              "More complete Chinese / English UI coverage",
+              "Clearer update-history text in light theme",
+              "Smoother Settings and image-information dialogs"
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.9",
       "sections": {
@@ -61,43 +100,6 @@
             "items": [
               "Update window looks consistent with Settings",
               "Release notes rewritten in plain language"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "version": "0.1.8",
-      "sections": {
-        "zh-CN": [
-          {
-            "title": "功能",
-            "items": [
-              "支持在应用内检查并安装新版本",
-              "改进联网稳定性，在线功能与更新更可靠"
-            ]
-          },
-          {
-            "title": "改进",
-            "items": [
-              "关于页可查看更新内容",
-              "遇到有问题的版本时可选择跳过"
-            ]
-          }
-        ],
-        "en-US": [
-          {
-            "title": "Features",
-            "items": [
-              "Check and install updates from inside the app",
-              "More reliable online features and update downloads"
-            ]
-          },
-          {
-            "title": "Improvements",
-            "items": [
-              "View update notes from About",
-              "Skip a release you do not want to install"
             ]
           }
         ]
