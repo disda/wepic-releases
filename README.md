@@ -7,7 +7,7 @@ WePic Windows 与 macOS 的公开安装包和共同更新清单。源码在独�
 打开 [最新发布](https://github.com/disda/wepic-releases/releases/latest) 下载安装包：
 
 - Windows x64：`WePicSetup-<version>-x64.exe`；x86：`WePicSetup-<version>.exe`。要求 Windows 10 1903 或更新版本。
-- Mac Apple Silicon：`WePic-<version>-<build>-macOS-arm64.dmg`。当前 build 116 要求 macOS 13.4 或更新版本；拖入应用程序后启动。
+- Mac Apple Silicon：`WePic-<version>-<build>-macOS-arm64.dmg`。当前 build 118 要求 macOS 13.4 或更新版本；拖入应用程序后启动。
 - ZIP 用于 Mac 应用内更新，首次安装请选择 DMG。旧 Mac 专用清单版本请先手动安装一次共用清单版本。
 
 ## 更新清单与日志

@@ -3,8 +3,8 @@
   "tag": "v0.1.11",
   "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
   "notes": {
-    "zh-CN": "修复关闭后仍打开旧版本：下载完成并退出后，会等进程结束再静默安装；支持断点续传。\n统一 Windows 与 Mac 更新记录和清单；Mac 最低支持 macOS 13.4，修复界面显示。\nMac build 116：优化顶栏更新按钮、启动检查与关闭后安装重启，更新开关重启后生效。",
-    "en-US": "Fix: quit waits for WePic to exit before silent install so the next launch is new. Downloads can resume after restart.\nShared Windows/Mac update manifest and history; macOS 13.4+ support and UI fixes.\nMac build 116: refine the titlebar action, startup checks, install/relaunch and persisted update controls."
+    "zh-CN": "修复关闭后仍打开旧版本：下载完成并退出后，会等进程结束再静默安装；支持断点续传。\n统一 Windows 与 Mac 更新记录和清单；Mac 最低支持 macOS 13.4，修复界面显示。\nMac build 116：优化顶栏更新按钮、启动检查与关闭后安装重启，更新开关重启后生效。\nMac build 118：新增已下载标记、悬停日志和右上角关闭按钮，重启后复用经过验签的完整更新缓存。",
+    "en-US": "Fix: quit waits for WePic to exit before silent install so the next launch is new. Downloads can resume after restart.\nShared Windows/Mac update manifest and history; macOS 13.4+ support and UI fixes.\nMac build 116: refine the titlebar action, startup checks, install/relaunch and persisted update controls.\nMac build 118: ready badges, hover notes, corner dismissal and verified cached updates across restarts."
   },
   "windows": {
     "x64": {
@@ -55,6 +55,14 @@
               "顶栏更新入口改为低调的小按钮，悬停高亮并显示关闭按钮，可在设置中恢复。",
               "修复浅色主题文字与更新开关；开关即时保存，重启后保持生效。"
             ]
+          },
+          {
+            "title": "Mac 更新缓存与提示（build 118）",
+            "items": [
+              "下载校验完成后在顶栏标记“已下载”，悬停可查看本次更新日志。",
+              "关闭按钮悬浮在更新按钮右上角，主按钮大小与文字位置保持不变。",
+              "启动时重新校验并恢复已下载更新，完整包不重复下载；解压目录缺失时使用本地 ZIP 恢复。"
+            ]
           }
         ],
         "en-US": [
@@ -81,6 +89,14 @@
               "Install a verified update when closing or quitting, then reopen the new app.",
               "Compact neutral titlebar action, highlighted on hover with a dismiss control; restore it in Settings.",
               "Improve light-theme readability and persist update preferences across restarts."
+            ]
+          },
+          {
+            "title": "Mac update cache and previews (build 118)",
+            "items": [
+              "Mark verified downloads as ready and preview release notes on hover.",
+              "Float the dismiss control above the top-right corner without resizing or shifting the action.",
+              "Restore verified update caches on startup without downloading again; rebuild missing staging from the local ZIP."
             ]
           }
         ]
@@ -168,15 +184,15 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 116,
+  "build": 118,
   "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
-  "publishedAt": "2026-10-17T12:12:45.257675+00:00",
+  "publishedAt": "2026-10-17T12:50:44.294421+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePic-0.1.11-116-macOS-arm64.zip",
-      "size": 76565700,
-      "sha256": "79f675bdcbfd5b1e5a36c9ecf93b0652535c8f4f09a85deb0b91c34d1beae94f",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePic-0.1.11-118-macOS-arm64.zip",
+      "size": 76583398,
+      "sha256": "dc4b0bec83b4ffeb95b86d4838af7d8e69d3e0ea983bd312ca42b8fbb55e8e93",
       "minimumOS": "13.4"
     },
     "windows-x86_64-direct": {
