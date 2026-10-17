@@ -1,33 +1,19 @@
 # WePic Releases
 
-**WePic**（微图）Windows 安装包与应用内更新清单的公开发布仓库。
-
-源码仓库为私有；本仓库只放可下载的构建产物与 `version.json`，供客户端检查更新。
+WePic Windows 与 macOS 的公开安装包和共同更新清单。源码在独立私有仓库维护。
 
 ## 下载
 
-| 版本 | 说明 |
-|------|------|
-| [v0.1.8](https://github.com/disda/wepic-releases/releases/tag/v0.1.8) | 当前发布：x64 / x86 安装包 |
+打开 [最新发布](https://github.com/disda/wepic-releases/releases/latest) 下载安装包：
 
-- **64 位**：`WePicSetup-<version>-x64.exe`
-- **32 位**：`WePicSetup-<version>.exe`
+- Windows x64：`WePicSetup-<version>-x64.exe`；x86：`WePicSetup-<version>.exe`。要求 Windows 10 1903 或更新版本。
+- Mac Apple Silicon：`WePic-<version>-<build>-macOS-arm64.dmg`。当前 build 112 要求 macOS 13.4 或更新版本；拖入应用程序后启动。
+- ZIP 用于 Mac 应用内更新，首次安装请选择 DMG。旧 Mac 专用清单版本请先手动安装一次共用清单版本。
 
-也可打开右侧 **Releases** 选择历史版本。
+## 更新清单与日志
 
-## 更新清单
+Windows 和 Mac 共用根目录 [version.json](./version.json)。`notes` 与 `changelog` 是共同更新记录，Release 正文由相同数据生成，不另维护 Mac JSON。
 
-应用内更新读取本仓库根目录的 [`version.json`](./version.json)（另有国内镜像时可并行探测）。清单含版本号、发行说明、安装包 URL、大小与 SHA-256。
+Mac 使用 [version.json.sig](./version.json.sig) 验证整个清单的发布者签名，然后检查 ZIP 大小、SHA-256 与应用完整性。Windows 兼容字段保留原安装器信息。默认发布者签名与 Apple 公证是不同机制；当前 Mac 包为 ad-hoc 代码签名，尚未 Apple 公证。
 
-## 校验
-
-下载后可用 PowerShell 核对 SHA-256，并与对应 Release 说明或 `version.json` 中的值比对：
-
-```powershell
-Get-FileHash .\WePicSetup-0.1.8-x64.exe -Algorithm SHA256
-```
-
-## 系统要求
-
-- Windows 10 1903 或更高版本
-- 安装包已随附 OpenSSL 1.1（AI HTTPS / 更新下载共用）与 VC++ 运行库等依赖
+更新请在“设置 → 关于”中检查。历史安装包保留在 Releases 中；下载摘要可与 version.json 或 DMG 的 `.sha256` 文件核对。

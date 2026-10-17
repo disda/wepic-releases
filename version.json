@@ -3,8 +3,8 @@
   "tag": "v0.1.11",
   "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
   "notes": {
-    "zh-CN": "修复关闭后仍打开旧版本：下载完成并退出后，会等进程结束再静默安装；支持断点续传。",
-    "en-US": "Fix: quit waits for WePic to exit before silent install so the next launch is new. Downloads can resume after restart."
+    "zh-CN": "修复关闭后仍打开旧版本：下载完成并退出后，会等进程结束再静默安装；支持断点续传。\n统一 Windows 与 Mac 更新记录和清单；Mac 最低支持 macOS 13.4，修复界面显示。",
+    "en-US": "Fix: quit waits for WePic to exit before silent install so the next launch is new. Downloads can resume after restart.\nShared Windows/Mac update manifest and history; macOS 13.4+ support and UI fixes."
   },
   "windows": {
     "x64": {
@@ -37,6 +37,15 @@
               "下载完成后关闭再打开仍是旧版本：现已等进程完全退出后再静默安装",
               "安装包下载中断后可续传，不必从头下"
             ]
+          },
+          {
+            "title": "Mac 与跨平台更新",
+            "items": [
+              "Windows 与 Mac 共用更新清单与完整更新记录，不再单独维护 Mac JSON。",
+              "Mac 支持发布者签名校验、下载后安装与重启，失败时保留恢复信息。",
+              "Apple Silicon 安装包最低支持 macOS 13.4，包含本地文字识别和图片解码依赖。",
+              "修复设置复选框裁切、首页按钮边框及浅色主题显示问题。"
+            ]
           }
         ],
         "en-US": [
@@ -45,6 +54,15 @@
             "items": [
               "After a finished download, quitting no longer left you on the old build—install waits until WePic has fully exited",
               "Interrupted installer downloads resume instead of starting over"
+            ]
+          },
+          {
+            "title": "Mac and shared updates",
+            "items": [
+              "Windows and Mac use one version.json and the same complete release history.",
+              "Mac updates verify publisher signatures before download/install and retain recovery information on failure.",
+              "Apple Silicon packages target macOS 13.4+ and include local OCR and image decoders.",
+              "Fix clipped settings checkboxes, welcome button borders and light-theme rendering."
             ]
           }
         ]
@@ -128,5 +146,34 @@
         ]
       }
     }
-  ]
+  ],
+  "schemaVersion": 1,
+  "product": "wepic",
+  "channel": "stable",
+  "build": 112,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
+  "publishedAt": "2026-10-17T05:37:57.253852+00:00",
+  "assets": {
+    "macos-arm64-direct": {
+      "kind": "app-zip",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePic-0.1.11-112-macOS-arm64.zip",
+      "size": 76559874,
+      "sha256": "7e0d59a9b38bc756139f6e41098f137599d2ab15901e1ab16b5a1f1fab8bcdd7",
+      "minimumOS": "13.4"
+    },
+    "windows-x86_64-direct": {
+      "kind": "inno-setup",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11-x64.exe",
+      "size": 66355376,
+      "sha256": "246bc9b8d134be23ee69c68b5a8e3d2a454f19d4ca3a981199f5498af9f6a2c7",
+      "minimumOS": "10.0.18362"
+    },
+    "windows-x86-direct": {
+      "kind": "inno-setup",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11.exe",
+      "size": 67699409,
+      "sha256": "2bbc6a9dea5a202296f681bb5e093511ddd8590757805d6c1d90ca185b1f149d",
+      "minimumOS": "10.0.18362"
+    }
+  }
 }
