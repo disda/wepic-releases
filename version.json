@@ -3,8 +3,8 @@
   "tag": "v0.1.11",
   "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
   "notes": {
-    "zh-CN": "修复关闭后仍打开旧版本：下载完成并退出后，会等进程结束再静默安装；支持断点续传。\n统一 Windows 与 Mac 更新记录和清单；Mac 最低支持 macOS 13.4，修复界面显示。\nMac build 116：优化顶栏更新按钮、启动检查与关闭后安装重启，更新开关重启后生效。\nMac build 118：新增已下载标记、悬停日志和右上角关闭按钮，重启后复用经过验签的完整更新缓存。",
-    "en-US": "Fix: quit waits for WePic to exit before silent install so the next launch is new. Downloads can resume after restart.\nShared Windows/Mac update manifest and history; macOS 13.4+ support and UI fixes.\nMac build 116: refine the titlebar action, startup checks, install/relaunch and persisted update controls.\nMac build 118: ready badges, hover notes, corner dismissal and verified cached updates across restarts."
+    "zh-CN": "修复关闭后仍打开旧版本：下载完成并退出后，会等进程结束再静默安装；支持断点续传。\n统一 Windows 与 Mac 更新记录和清单；Mac 最低支持 macOS 13.4，修复界面显示。\nMac build 116：优化顶栏更新按钮、启动检查与关闭后安装重启，更新开关重启后生效。\nMac build 118：新增已下载标记、悬停日志和右上角关闭按钮，重启后复用经过验签的完整更新缓存。\nMac build 120：普通关闭或退出后安装并保持退出，只有主动点击“重启以更新”才重新打开。 异步准备安装，界面不再等待助手；下载中断可续传，完整缓存不重复下载。 更新失败提供明确原因、重试和手动下载入口；手动检查可重新发现已忽略版本。 主动重启更新恢复当前文件、缩放位置和视频进度，视频恢复后保持暂停。 清理过期更新缓存，补齐 Mac 菜单检查更新入口，并优化顶栏对齐、下载进度和日志滚动条。",
+    "en-US": "Fix: quit waits for WePic to exit before silent install so the next launch is new. Downloads can resume after restart.\nShared Windows/Mac update manifest and history; macOS 13.4+ support and UI fixes.\nMac build 116: refine the titlebar action, startup checks, install/relaunch and persisted update controls.\nMac build 118: ready badges, hover notes, corner dismissal and verified cached updates across restarts.\nMac build 120: Closing or quitting installs the verified update and keeps WePic closed; only Restart to Update relaunches it. Prepare installation asynchronously; resume interrupted downloads and reuse verified complete archives. Explain update failures with retry and manual-download actions; manual checks can rediscover ignored builds. Explicit update restarts restore the current file, image view and paused video position. Clean obsolete updater caches, add a native Mac check-for-updates menu, and refine toolbar alignment, progress and release-note scrolling."
   },
   "windows": {
     "x64": {
@@ -63,6 +63,16 @@
               "关闭按钮悬浮在更新按钮右上角，主按钮大小与文字位置保持不变。",
               "启动时重新校验并恢复已下载更新，完整包不重复下载；解压目录缺失时使用本地 ZIP 恢复。"
             ]
+          },
+          {
+            "title": "Mac 更新流程完善（build 120）",
+            "items": [
+              "普通关闭或退出后安装并保持退出，只有主动点击“重启以更新”才重新打开。",
+              "异步准备安装，界面不再等待助手；下载中断可续传，完整缓存不重复下载。",
+              "更新失败提供明确原因、重试和手动下载入口；手动检查可重新发现已忽略版本。",
+              "主动重启更新恢复当前文件、缩放位置和视频进度，视频恢复后保持暂停。",
+              "清理过期更新缓存，补齐 Mac 菜单检查更新入口，并优化顶栏对齐、下载进度和日志滚动条。"
+            ]
           }
         ],
         "en-US": [
@@ -97,6 +107,16 @@
               "Mark verified downloads as ready and preview release notes on hover.",
               "Float the dismiss control above the top-right corner without resizing or shifting the action.",
               "Restore verified update caches on startup without downloading again; rebuild missing staging from the local ZIP."
+            ]
+          },
+          {
+            "title": "Mac update refinements (build 120)",
+            "items": [
+              "Closing or quitting installs the verified update and keeps WePic closed; only Restart to Update relaunches it.",
+              "Prepare installation asynchronously; resume interrupted downloads and reuse verified complete archives.",
+              "Explain update failures with retry and manual-download actions; manual checks can rediscover ignored builds.",
+              "Explicit update restarts restore the current file, image view and paused video position.",
+              "Clean obsolete updater caches, add a native Mac check-for-updates menu, and refine toolbar alignment, progress and release-note scrolling."
             ]
           }
         ]
@@ -184,15 +204,15 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 118,
+  "build": 120,
   "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
-  "publishedAt": "2026-10-17T12:50:44.294421+00:00",
+  "publishedAt": "2026-10-18T00:17:33.244342+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePic-0.1.11-118-macOS-arm64.zip",
-      "size": 76583398,
-      "sha256": "dc4b0bec83b4ffeb95b86d4838af7d8e69d3e0ea983bd312ca42b8fbb55e8e93",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePic-0.1.11-120-macOS-arm64.zip",
+      "size": 76606492,
+      "sha256": "189df46252d71d120a0a983bb19082a1e9fa54cb09d68eba5d4fe8fa3af81ea3",
       "minimumOS": "13.4"
     },
     "windows-x86_64-direct": {
