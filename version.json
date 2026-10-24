@@ -3,8 +3,8 @@
   "tag": "v0.1.11",
   "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
   "notes": {
-    "zh-CN": "修复关闭后仍打开旧版本：下载完成并退出后，会等进程结束再静默安装；支持断点续传。\n统一 Windows 与 Mac 更新记录和清单；Mac 最低支持 macOS 13.4，修复界面显示。\nMac build 116：优化顶栏更新按钮、启动检查与关闭后安装重启，更新开关重启后生效。\nMac build 118：新增已下载标记、悬停日志和右上角关闭按钮，重启后复用经过验签的完整更新缓存。\nMac build 120：普通关闭或退出后安装并保持退出，只有主动点击“重启以更新”才重新打开。 异步准备安装，界面不再等待助手；下载中断可续传，完整缓存不重复下载。 更新失败提供明确原因、重试和手动下载入口；手动检查可重新发现已忽略版本。 主动重启更新恢复当前文件、缩放位置和视频进度，视频恢复后保持暂停。 清理过期更新缓存，补齐 Mac 菜单检查更新入口，并优化顶栏对齐、下载进度和日志滚动条。",
-    "en-US": "Fix: quit waits for WePic to exit before silent install so the next launch is new. Downloads can resume after restart.\nShared Windows/Mac update manifest and history; macOS 13.4+ support and UI fixes.\nMac build 116: refine the titlebar action, startup checks, install/relaunch and persisted update controls.\nMac build 118: ready badges, hover notes, corner dismissal and verified cached updates across restarts.\nMac build 120: Closing or quitting installs the verified update and keeps WePic closed; only Restart to Update relaunches it. Prepare installation asynchronously; resume interrupted downloads and reuse verified complete archives. Explain update failures with retry and manual-download actions; manual checks can rediscover ignored builds. Explicit update restarts restore the current file, image view and paused video position. Clean obsolete updater caches, add a native Mac check-for-updates menu, and refine toolbar alignment, progress and release-note scrolling."
+    "zh-CN": "WePic 首次公开发布。\n支持 Windows 与 macOS，提供一致的看图操作。\n支持 Live Photo 与动态照片播放，照片和视频在同一窗口浏览。\n支持本地 OCR 和图上划词，识别后直接选中、复制文字。\n支持图片翻译，可使用自备 API 配置在线翻译。\n支持图片编辑标注、动图逐帧查看、文件夹浏览及深浅主题。\n提供 Windows 安装包与 Mac Apple Silicon 安装包。\n支持在应用内检查更新、下载更新包和查看更新说明。\n下载更新支持完整性校验和中断续传；Mac 更新清单使用发布者签名校验。",
+    "en-US": "Initial public release of WePic.\nAvailable on Windows and macOS with familiar viewing controls on both platforms.\nPlay Live Photos and motion photos, and browse photos and videos in one window.\nRecognize text locally with OCR, then select and copy it directly from images.\nTranslate images online using your own API configuration.\nEdit and annotate images, inspect animated images frame by frame, browse folders, and switch between light and dark themes.\nInstallers are available for Windows and Apple Silicon Macs.\nCheck for updates, download update packages, and read release notes inside the app.\nUpdate downloads support integrity checks and resuming; Mac update manifests are verified with the publisher’s signature."
   },
   "windows": {
     "x64": {
@@ -32,169 +32,41 @@
       "sections": {
         "zh-CN": [
           {
-            "title": "修复",
+            "title": "首次公开发布",
             "items": [
-              "下载完成后关闭再打开仍是旧版本：现已等进程完全退出后再静默安装",
-              "安装包下载中断后可续传，不必从头下"
+              "支持 Windows 与 macOS，提供一致的看图操作。",
+              "支持 Live Photo 与动态照片播放，照片和视频在同一窗口浏览。",
+              "支持本地 OCR 和图上划词，识别后直接选中、复制文字。",
+              "支持图片翻译，可使用自备 API 配置在线翻译。",
+              "支持图片编辑标注、动图逐帧查看、文件夹浏览及深浅主题。"
             ]
           },
           {
-            "title": "Mac 与跨平台更新",
+            "title": "安装与更新",
             "items": [
-              "Windows 与 Mac 共用更新清单与完整更新记录，不再单独维护 Mac JSON。",
-              "Mac 支持发布者签名校验、下载后安装与重启，失败时保留恢复信息。",
-              "Apple Silicon 安装包最低支持 macOS 13.4，包含本地文字识别和图片解码依赖。",
-              "修复设置复选框裁切、首页按钮边框及浅色主题显示问题。"
-            ]
-          },
-          {
-            "title": "Mac 更新体验（build 116）",
-            "items": [
-              "启动时检查新版本，不再被上次检查的时间间隔跳过。",
-              "下载完成后关闭或退出，可安装并自动重新打开新版本。",
-              "顶栏更新入口改为低调的小按钮，悬停高亮并显示关闭按钮，可在设置中恢复。",
-              "修复浅色主题文字与更新开关；开关即时保存，重启后保持生效。"
-            ]
-          },
-          {
-            "title": "Mac 更新缓存与提示（build 118）",
-            "items": [
-              "下载校验完成后在顶栏标记“已下载”，悬停可查看本次更新日志。",
-              "关闭按钮悬浮在更新按钮右上角，主按钮大小与文字位置保持不变。",
-              "启动时重新校验并恢复已下载更新，完整包不重复下载；解压目录缺失时使用本地 ZIP 恢复。"
-            ]
-          },
-          {
-            "title": "Mac 更新流程完善（build 120）",
-            "items": [
-              "普通关闭或退出后安装并保持退出，只有主动点击“重启以更新”才重新打开。",
-              "异步准备安装，界面不再等待助手；下载中断可续传，完整缓存不重复下载。",
-              "更新失败提供明确原因、重试和手动下载入口；手动检查可重新发现已忽略版本。",
-              "主动重启更新恢复当前文件、缩放位置和视频进度，视频恢复后保持暂停。",
-              "清理过期更新缓存，补齐 Mac 菜单检查更新入口，并优化顶栏对齐、下载进度和日志滚动条。"
+              "提供 Windows 安装包与 Mac Apple Silicon 安装包。",
+              "支持在应用内检查更新、下载更新包和查看更新说明。",
+              "下载更新支持完整性校验和中断续传；Mac 更新清单使用发布者签名校验。"
             ]
           }
         ],
         "en-US": [
           {
-            "title": "Fixes",
+            "title": "Initial public release",
             "items": [
-              "After a finished download, quitting no longer left you on the old build—install waits until WePic has fully exited",
-              "Interrupted installer downloads resume instead of starting over"
+              "Available on Windows and macOS with familiar viewing controls on both platforms.",
+              "Play Live Photos and motion photos, and browse photos and videos in one window.",
+              "Recognize text locally with OCR, then select and copy it directly from images.",
+              "Translate images online using your own API configuration.",
+              "Edit and annotate images, inspect animated images frame by frame, browse folders, and switch between light and dark themes."
             ]
           },
           {
-            "title": "Mac and shared updates",
+            "title": "Installation and updates",
             "items": [
-              "Windows and Mac use one version.json and the same complete release history.",
-              "Mac updates verify publisher signatures before download/install and retain recovery information on failure.",
-              "Apple Silicon packages target macOS 13.4+ and include local OCR and image decoders.",
-              "Fix clipped settings checkboxes, welcome button borders and light-theme rendering."
-            ]
-          },
-          {
-            "title": "Mac update experience (build 116)",
-            "items": [
-              "Check once at startup even when the previous session checked recently.",
-              "Install a verified update when closing or quitting, then reopen the new app.",
-              "Compact neutral titlebar action, highlighted on hover with a dismiss control; restore it in Settings.",
-              "Improve light-theme readability and persist update preferences across restarts."
-            ]
-          },
-          {
-            "title": "Mac update cache and previews (build 118)",
-            "items": [
-              "Mark verified downloads as ready and preview release notes on hover.",
-              "Float the dismiss control above the top-right corner without resizing or shifting the action.",
-              "Restore verified update caches on startup without downloading again; rebuild missing staging from the local ZIP."
-            ]
-          },
-          {
-            "title": "Mac update refinements (build 120)",
-            "items": [
-              "Closing or quitting installs the verified update and keeps WePic closed; only Restart to Update relaunches it.",
-              "Prepare installation asynchronously; resume interrupted downloads and reuse verified complete archives.",
-              "Explain update failures with retry and manual-download actions; manual checks can rediscover ignored builds.",
-              "Explicit update restarts restore the current file, image view and paused video position.",
-              "Clean obsolete updater caches, add a native Mac check-for-updates menu, and refine toolbar alignment, progress and release-note scrolling."
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "version": "0.1.10",
-      "sections": {
-        "zh-CN": [
-          {
-            "title": "功能",
-            "items": [
-              "更新下载完成后不再打断使用；关闭后会静默安装，下次打开即为新版本",
-              "AI 翻译可选择目标语言：中文、英文，或跟随界面语言"
-            ]
-          },
-          {
-            "title": "改进",
-            "items": [
-              "界面中英文切换更完整",
-              "浅色主题下更新记录文字更清晰",
-              "设置与图片信息等窗口体验优化"
-            ]
-          }
-        ],
-        "en-US": [
-          {
-            "title": "Features",
-            "items": [
-              "Updates download in the background without interrupting you; they install when you quit, and the next launch uses the new version",
-              "Choose AI translation target: Chinese, English, or follow the UI language"
-            ]
-          },
-          {
-            "title": "Improvements",
-            "items": [
-              "More complete Chinese / English UI coverage",
-              "Clearer update-history text in light theme",
-              "Smoother Settings and image-information dialogs"
-            ]
-          }
-        ]
-      }
-    },
-    {
-      "version": "0.1.9",
-      "sections": {
-        "zh-CN": [
-          {
-            "title": "功能",
-            "items": [
-              "启动后可自动检查更新，并在后台下载",
-              "下载完成后可自动安装并重新打开 WePic",
-              "设置 → 关于 可随时查看更新记录"
-            ]
-          },
-          {
-            "title": "改进",
-            "items": [
-              "更新窗口外观与设置界面一致",
-              "更新说明改成更通俗的表述，方便了解改了什么"
-            ]
-          }
-        ],
-        "en-US": [
-          {
-            "title": "Features",
-            "items": [
-              "Auto-check for updates after launch, with background download",
-              "When ready, install and reopen WePic automatically",
-              "Open update history anytime from Settings → About"
-            ]
-          },
-          {
-            "title": "Improvements",
-            "items": [
-              "Update window looks consistent with Settings",
-              "Release notes rewritten in plain language"
+              "Installers are available for Windows and Apple Silicon Macs.",
+              "Check for updates, download update packages, and read release notes inside the app.",
+              "Update downloads support integrity checks and resuming; Mac update manifests are verified with the publisher’s signature."
             ]
           }
         ]
