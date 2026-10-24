@@ -1,10 +1,10 @@
 {
   "version": "0.1.11",
-  "tag": "v0.1.11",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
+  "tag": "v0.1.11-build123",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11-build123",
   "notes": {
-    "zh-CN": "WePic 首次公开发布。\n支持 Windows 与 macOS，提供一致的看图操作。\n支持 Live Photo 与动态照片播放，照片和视频在同一窗口浏览。\n支持本地 OCR 和图上划词，识别后直接选中、复制文字。\n支持图片翻译，可使用自备 API 配置在线翻译。\n支持图片编辑标注、动图逐帧查看、文件夹浏览及深浅主题。\n提供 Windows 安装包与 Mac Apple Silicon 安装包。\n支持在应用内检查更新、下载更新包和查看更新说明。\n下载更新支持完整性校验和中断续传；Mac 更新清单使用发布者签名校验。",
-    "en-US": "Initial public release of WePic.\nAvailable on Windows and macOS with familiar viewing controls on both platforms.\nPlay Live Photos and motion photos, and browse photos and videos in one window.\nRecognize text locally with OCR, then select and copy it directly from images.\nTranslate images online using your own API configuration.\nEdit and annotate images, inspect animated images frame by frame, browse folders, and switch between light and dark themes.\nInstallers are available for Windows and Apple Silicon Macs.\nCheck for updates, download update packages, and read release notes inside the app.\nUpdate downloads support integrity checks and resuming; Mac update manifests are verified with the publisher’s signature."
+    "zh-CN": "新增 Mac 双指跟手切图与回弹，支持动图切换。\n大图显示预览按 96 MiB 缓存，减少反复切图重新加载。\n图片和视频 loading 延迟 100ms 显示。\n提供 macOS 13.4+ Apple Silicon 与 Intel 安装包，沿用发布者更新签名。\n官网与客户端共用更新清单，安装包通过 download.wepic.top 下载。",
+    "en-US": "Trackpad image transitions with snap-back and animated-image navigation.\nA bounded 96 MiB display cache avoids repeated large-image decoding.\nImage and video loading indicators appear after 100 ms.\nmacOS 13.4+ Apple Silicon and Intel installers retain publisher-key updates.\nWebsite and in-app updates share one signed feed and download packages from download.wepic.top."
   },
   "windows": {
     "x64": {
@@ -32,41 +32,25 @@
       "sections": {
         "zh-CN": [
           {
-            "title": "首次公开发布",
+            "title": "更新内容",
             "items": [
-              "支持 Windows 与 macOS，提供一致的看图操作。",
-              "支持 Live Photo 与动态照片播放，照片和视频在同一窗口浏览。",
-              "支持本地 OCR 和图上划词，识别后直接选中、复制文字。",
-              "支持图片翻译，可使用自备 API 配置在线翻译。",
-              "支持图片编辑标注、动图逐帧查看、文件夹浏览及深浅主题。"
-            ]
-          },
-          {
-            "title": "安装与更新",
-            "items": [
-              "提供 Windows 安装包与 Mac Apple Silicon 安装包。",
-              "支持在应用内检查更新、下载更新包和查看更新说明。",
-              "下载更新支持完整性校验和中断续传；Mac 更新清单使用发布者签名校验。"
+              "新增 Mac 双指跟手切图与回弹，支持动图切换。",
+              "大图显示预览按 96 MiB 缓存，减少反复切图重新加载。",
+              "图片和视频 loading 延迟 100ms 显示。",
+              "提供 macOS 13.4+ Apple Silicon 与 Intel 安装包，沿用发布者更新签名。",
+              "官网与客户端共用更新清单，安装包通过 download.wepic.top 下载。"
             ]
           }
         ],
         "en-US": [
           {
-            "title": "Initial public release",
+            "title": "What's new",
             "items": [
-              "Available on Windows and macOS with familiar viewing controls on both platforms.",
-              "Play Live Photos and motion photos, and browse photos and videos in one window.",
-              "Recognize text locally with OCR, then select and copy it directly from images.",
-              "Translate images online using your own API configuration.",
-              "Edit and annotate images, inspect animated images frame by frame, browse folders, and switch between light and dark themes."
-            ]
-          },
-          {
-            "title": "Installation and updates",
-            "items": [
-              "Installers are available for Windows and Apple Silicon Macs.",
-              "Check for updates, download update packages, and read release notes inside the app.",
-              "Update downloads support integrity checks and resuming; Mac update manifests are verified with the publisher’s signature."
+              "Trackpad image transitions with snap-back and animated-image navigation.",
+              "A bounded 96 MiB display cache avoids repeated large-image decoding.",
+              "Image and video loading indicators appear after 100 ms.",
+              "macOS 13.4+ Apple Silicon and Intel installers retain publisher-key updates.",
+              "Website and in-app updates share one signed feed and download packages from download.wepic.top."
             ]
           }
         ]
@@ -76,15 +60,15 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 120,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11",
-  "publishedAt": "2026-10-18T00:17:33.244342+00:00",
+  "build": 123,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11-build123",
+  "publishedAt": "2026-10-24T13:25:37.199901+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePic-0.1.11-120-macOS-arm64.zip",
-      "size": 76606492,
-      "sha256": "189df46252d71d120a0a983bb19082a1e9fa54cb09d68eba5d4fe8fa3af81ea3",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11-build123/WePic-0.1.11-123-macOS-arm64.zip",
+      "size": 62361366,
+      "sha256": "182a9f5ff60d819145bd9380f62c94de60de7d420d10a78694db79f2878d1ca4",
       "minimumOS": "13.4"
     },
     "windows-x86_64-direct": {
@@ -100,6 +84,15 @@
       "size": 67699409,
       "sha256": "2bbc6a9dea5a202296f681bb5e093511ddd8590757805d6c1d90ca185b1f149d",
       "minimumOS": "10.0.18362"
+    },
+    "macos-x86_64-direct": {
+      "kind": "app-zip",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11-build123/WePic-0.1.11-123-macOS-x86_64.zip",
+      "size": 59364923,
+      "sha256": "0c13cda4bbb3062484a62bb380c624d60a6fb8c8e0066ec34bf518f822fce860",
+      "minimumOS": "13.4"
     }
-  }
+  },
+  "sourceCommit": "621cb0918cad65dc37646dff18b0d20ed62ab1ab",
+  "sourceRepository": "disda/offlineocr"
 }
