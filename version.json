@@ -1,56 +1,110 @@
 {
-  "version": "0.1.11",
-  "tag": "v0.1.11-build123",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11-build123",
+  "version": "0.1.16",
+  "tag": "v0.1.16",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.16",
   "notes": {
-    "zh-CN": "新增 Mac 双指跟手切图与回弹，支持动图切换。\n大图显示预览按 96 MiB 缓存，减少反复切图重新加载。\n图片和视频 loading 延迟 100ms 显示。\n提供 macOS 13.4+ Apple Silicon 与 Intel 安装包，沿用发布者更新签名。\n官网与客户端共用更新清单，安装包通过 download.wepic.top 下载。",
-    "en-US": "Trackpad image transitions with snap-back and animated-image navigation.\nA bounded 96 MiB display cache avoids repeated large-image decoding.\nImage and video loading indicators appear after 100 ms.\nmacOS 13.4+ Apple Silicon and Intel installers retain publisher-key updates.\nWebsite and in-app updates share one signed feed and download packages from download.wepic.top."
+    "zh-CN": "完成编辑时选择覆盖或另存，保存后恢复文字识别与划词。",
+    "en-US": "Choose overwrite or Save as when finishing edits, then recognize and select text again."
   },
   "windows": {
     "x64": {
-      "file": "WePicSetup-0.1.11-x64.exe",
-      "size": 66355376,
-      "sha256": "246bc9b8d134be23ee69c68b5a8e3d2a454f19d4ca3a981199f5498af9f6a2c7",
+      "version": "0.1.14",
+      "build": 126,
+      "file": "WePicSetup-0.1.14-x64.exe",
+      "size": 64559100,
+      "sha256": "1a76b5a22b55160894afdbdb57cc4c01bd0ed862210cd658a48a79e5526b331e",
       "urls": [
-        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11-x64.exe",
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11-x64.exe"
-      ]
-    },
-    "x86": {
-      "file": "WePicSetup-0.1.11.exe",
-      "size": 67699409,
-      "sha256": "2bbc6a9dea5a202296f681bb5e093511ddd8590757805d6c1d90ca185b1f149d",
-      "urls": [
-        "https://gitee.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11.exe",
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11.exe"
-      ]
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.14/WePicSetup-0.1.14-x64.exe"
+      ],
+      "notes": {
+        "zh-CN": "Windows 0.1.14：更新下载期间移除取消按钮并增加退出提示；下载完成后可重启静默安装新版。",
+        "en-US": "Windows 0.1.14: downloads no longer show a Cancel button, quitting prompts while downloading, and downloaded updates install silently on restart."
+      },
+      "changelog": [
+        {
+          "version": "0.1.14",
+          "sections": {
+            "zh-CN": [
+              {
+                "title": "更新体验",
+                "items": [
+                  "下载更新期间隐藏取消按钮、禁止切换线路，退出时提示并保留已下载内容。",
+                  "下载完成后可重启以静默安装新版；安装前重新校验安装包，安装失败不会反复自动安装。",
+                  "修复 Windows 更新记录显示，官网按访问设备默认选择 Windows 或 Mac 下载。",
+                  "本次发布为 Windows x64；macOS 保持 0.1.12。"
+                ]
+              }
+            ],
+            "en-US": [
+              {
+                "title": "Update experience",
+                "items": [
+                  "Hide Cancel and disable source changes during downloads; prompt before quitting and retain partial downloads.",
+                  "Restart to install downloaded updates silently; revalidate packages before installation and avoid repeated failed installs.",
+                  "Show Windows-specific release notes and choose the website download platform from the visiting device.",
+                  "This release is for Windows x64; macOS remains on 0.1.12."
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "version": "0.1.13",
+          "sections": {
+            "zh-CN": [
+              {
+                "title": "Windows 更新",
+                "items": [
+                  "启动统计接入 PostHog，可在设置中关闭使用统计。",
+                  "官网安装包和客户端更新包通过 Cloudflare CDN 分发。",
+                  "本次发布为 Windows x64；macOS 保持 0.1.12。"
+                ]
+              }
+            ],
+            "en-US": [
+              {
+                "title": "Windows update",
+                "items": [
+                  "Startup statistics use PostHog and can be disabled in Settings.",
+                  "Website downloads and client update packages use Cloudflare CDN.",
+                  "This release is for Windows x64; macOS remains on 0.1.12."
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publishedAt": "2026-10-29T16:29:44.612673+00:00",
+      "sourceRepository": "disda/offlineocr",
+      "sourceCommit": "c4a74fe3eebe95e1d6f53c1fa8ad0ba4d40f105c",
+      "sourceWorktreeDirty": false
     }
   },
   "changelog": [
     {
-      "version": "0.1.11",
+      "version": "0.1.16",
       "sections": {
         "zh-CN": [
           {
-            "title": "更新内容",
+            "title": "更新",
             "items": [
-              "新增 Mac 双指跟手切图与回弹，支持动图切换。",
-              "大图显示预览按 96 MiB 缓存，减少反复切图重新加载。",
-              "图片和视频 loading 延迟 100ms 显示。",
-              "提供 macOS 13.4+ Apple Silicon 与 Intel 安装包，沿用发布者更新签名。",
-              "官网与客户端共用更新清单，安装包通过 download.wepic.top 下载。"
+              "完成编辑时即可选择覆盖原图或另存为，不再等到切图时才提示保存。",
+              "取消另存或保存失败时保留编辑，放弃修改可返回已保存的图片。",
+              "保存后自动重新识别文字，修复旧识别结果回填和编辑后无法划词的问题。",
+              "保存确认采用紧凑圆角样式，适配深浅主题与中英文。",
+              "默认标注线条更细，减少对图片内容的遮挡。"
             ]
           }
         ],
         "en-US": [
           {
-            "title": "What's new",
+            "title": "Changes",
             "items": [
-              "Trackpad image transitions with snap-back and animated-image navigation.",
-              "A bounded 96 MiB display cache avoids repeated large-image decoding.",
-              "Image and video loading indicators appear after 100 ms.",
-              "macOS 13.4+ Apple Silicon and Intel installers retain publisher-key updates.",
-              "Website and in-app updates share one signed feed and download packages from download.wepic.top."
+              "Choose Overwrite or Save as when finishing an edit, before returning to the viewer.",
+              "Keep edits when saving is cancelled or fails; discard returns to the last saved image.",
+              "Recognize text again after saving and prevent stale OCR results from disabling text selection.",
+              "Use a compact rounded save dialog in light and dark themes, in English and Chinese.",
+              "Use thinner default annotation strokes."
             ]
           }
         ]
@@ -60,39 +114,33 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 123,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.11-build123",
-  "publishedAt": "2026-10-24T13:25:37.199901+00:00",
+  "build": 128,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.16",
+  "publishedAt": "2026-10-30T05:33:15.197097+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11-build123/WePic-0.1.11-123-macOS-arm64.zip",
-      "size": 62361366,
-      "sha256": "182a9f5ff60d819145bd9380f62c94de60de7d420d10a78694db79f2878d1ca4",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.16/WePic-0.1.16-macOS-arm64.zip",
+      "size": 59441812,
+      "sha256": "5c84a1e3d36fb5e8fd92d6fb194da5eebe59fe753a8b9f1666e77c7a8790b10e",
       "minimumOS": "13.4"
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11-x64.exe",
-      "size": 66355376,
-      "sha256": "246bc9b8d134be23ee69c68b5a8e3d2a454f19d4ca3a981199f5498af9f6a2c7",
-      "minimumOS": "10.0.18362"
-    },
-    "windows-x86-direct": {
-      "kind": "inno-setup",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11/WePicSetup-0.1.11.exe",
-      "size": 67699409,
-      "sha256": "2bbc6a9dea5a202296f681bb5e093511ddd8590757805d6c1d90ca185b1f149d",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.14/WePicSetup-0.1.14-x64.exe",
+      "size": 64559100,
+      "sha256": "1a76b5a22b55160894afdbdb57cc4c01bd0ed862210cd658a48a79e5526b331e",
       "minimumOS": "10.0.18362"
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.11-build123/WePic-0.1.11-123-macOS-x86_64.zip",
-      "size": 59364923,
-      "sha256": "0c13cda4bbb3062484a62bb380c624d60a6fb8c8e0066ec34bf518f822fce860",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.16/WePic-0.1.16-macOS-x86_64.zip",
+      "size": 59464309,
+      "sha256": "c695bd9862df7db0ccf641fbde444e2f51baf6463f8d8aac94db0620c70df667",
       "minimumOS": "13.4"
     }
   },
-  "sourceCommit": "621cb0918cad65dc37646dff18b0d20ed62ab1ab",
-  "sourceRepository": "disda/offlineocr"
+  "sourceCommit": "ad38a15275ab734c77d1d9817aa4df698458a2d6",
+  "sourceRepository": "disda/offlineocr",
+  "sourceWorktreeDirty": false
 }
