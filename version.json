@@ -1,10 +1,10 @@
 {
-  "version": "0.1.16",
-  "tag": "v0.1.16",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.16",
+  "version": "0.1.17",
+  "tag": "v0.1.17",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.17",
   "notes": {
-    "zh-CN": "完成编辑时选择覆盖或另存，保存后恢复文字识别与划词。",
-    "en-US": "Choose overwrite or Save as when finishing edits, then recognize and select text again."
+    "zh-CN": "改善笔触绘制、媒体格式筛选与按平台独立更新。",
+    "en-US": "Improve drawing, media format filtering and independent platform updates."
   },
   "windows": {
     "x64": {
@@ -82,6 +82,35 @@
   },
   "changelog": [
     {
+      "version": "0.1.17",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "更新",
+            "items": [
+              "旧版 system 识别配置统一使用默认 ONNX，避免调用不同识别后端。",
+              "改善编辑器笔触与连续绘制交互，默认线条更细。",
+              "查看器仅接收文件关联列表中的媒体格式，避免误打开不支持的文件。",
+              "Mac 与 Windows 可独立发布，更新检查按本平台版本和安装包身份判断。",
+              "保留完成编辑时覆盖原图或另存为，以及保存后的文字识别与划词。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Changes",
+            "items": [
+              "Use the default ONNX backend for legacy system OCR preferences.",
+              "Improve editor strokes and continuous drawing with thinner default lines.",
+              "Only open media formats listed in file associations.",
+              "Allow independent Mac and Windows releases and check updates using the current platform package identity.",
+              "Retain overwrite or Save as on edit completion and text recognition after saving."
+            ]
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.16",
       "sections": {
         "zh-CN": [
@@ -114,33 +143,39 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 128,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.16",
-  "publishedAt": "2026-10-30T05:33:15.197097+00:00",
+  "build": 129,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.17",
+  "publishedAt": "2026-10-30T23:08:20.202376+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.16/WePic-0.1.16-macOS-arm64.zip",
-      "size": 59441812,
-      "sha256": "5c84a1e3d36fb5e8fd92d6fb194da5eebe59fe753a8b9f1666e77c7a8790b10e",
-      "minimumOS": "13.4"
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.17/WePic-0.1.17-macOS-arm64.zip",
+      "size": 57704376,
+      "sha256": "0abe556364908ff20311bca2bdbd96021c0e0adb26c0073fe4c90856ad2178eb",
+      "minimumOS": "13.4",
+      "version": "0.1.17",
+      "build": 129
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
       "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.14/WePicSetup-0.1.14-x64.exe",
       "size": 64559100,
       "sha256": "1a76b5a22b55160894afdbdb57cc4c01bd0ed862210cd658a48a79e5526b331e",
-      "minimumOS": "10.0.18362"
+      "minimumOS": "10.0.18362",
+      "version": "0.1.14",
+      "build": 126
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.16/WePic-0.1.16-macOS-x86_64.zip",
-      "size": 59464309,
-      "sha256": "c695bd9862df7db0ccf641fbde444e2f51baf6463f8d8aac94db0620c70df667",
-      "minimumOS": "13.4"
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.17/WePic-0.1.17-macOS-x86_64.zip",
+      "size": 59467098,
+      "sha256": "1a8b8ce4ffca20417c6888220a492da7426a35d16fb6b2eab92c2dc1013d57c5",
+      "minimumOS": "13.4",
+      "version": "0.1.17",
+      "build": 129
     }
   },
-  "sourceCommit": "ad38a15275ab734c77d1d9817aa4df698458a2d6",
+  "sourceCommit": "29f7b3746b4443156005a7557b0b447fbc32ff5f",
   "sourceRepository": "disda/offlineocr",
   "sourceWorktreeDirty": false
 }
