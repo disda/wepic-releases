@@ -1,86 +1,73 @@
 {
-  "version": "0.1.17",
-  "tag": "v0.1.17",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.17",
+  "version": "0.1.18",
+  "tag": "v0.1.18",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.18",
   "notes": {
-    "zh-CN": "改善笔触绘制、媒体格式筛选与按平台独立更新。",
-    "en-US": "Improve drawing, media format filtering and independent platform updates."
+    "zh-CN": "修复视频尾帧结束与重播，改善媒体切换、HEIC 入口与更新重启提示。\n\nmacOS: 改善媒体切换与 HEIC 支持，完善更新重启提示和完整更新记录。",
+    "en-US": "Fix video end-frame replay, improve media transitions, HEIC entry points and update restart hints.\n\nmacOS: Improve media transitions, HEIC support, update restart controls and complete release history."
   },
   "windows": {
     "x64": {
-      "version": "0.1.14",
-      "build": 126,
-      "file": "WePicSetup-0.1.14-x64.exe",
-      "size": 64559100,
-      "sha256": "1a76b5a22b55160894afdbdb57cc4c01bd0ed862210cd658a48a79e5526b331e",
+      "file": "WePicSetup-0.1.18-x64.exe",
+      "size": 64569796,
+      "sha256": "79000b6620bfce6b22c67f1946649691eb9f6515d031dd8a98448e56b351f85a",
       "urls": [
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.14/WePicSetup-0.1.14-x64.exe"
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.18/WePicSetup-0.1.18-x64.exe"
       ],
-      "notes": {
-        "zh-CN": "Windows 0.1.14：更新下载期间移除取消按钮并增加退出提示；下载完成后可重启静默安装新版。",
-        "en-US": "Windows 0.1.14: downloads no longer show a Cancel button, quitting prompts while downloading, and downloaded updates install silently on restart."
-      },
-      "changelog": [
-        {
-          "version": "0.1.14",
-          "sections": {
-            "zh-CN": [
-              {
-                "title": "更新体验",
-                "items": [
-                  "下载更新期间隐藏取消按钮、禁止切换线路，退出时提示并保留已下载内容。",
-                  "下载完成后可重启以静默安装新版；安装前重新校验安装包，安装失败不会反复自动安装。",
-                  "修复 Windows 更新记录显示，官网按访问设备默认选择 Windows 或 Mac 下载。",
-                  "本次发布为 Windows x64；macOS 保持 0.1.12。"
-                ]
-              }
-            ],
-            "en-US": [
-              {
-                "title": "Update experience",
-                "items": [
-                  "Hide Cancel and disable source changes during downloads; prompt before quitting and retain partial downloads.",
-                  "Restart to install downloaded updates silently; revalidate packages before installation and avoid repeated failed installs.",
-                  "Show Windows-specific release notes and choose the website download platform from the visiting device.",
-                  "This release is for Windows x64; macOS remains on 0.1.12."
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "version": "0.1.13",
-          "sections": {
-            "zh-CN": [
-              {
-                "title": "Windows 更新",
-                "items": [
-                  "启动统计接入 PostHog，可在设置中关闭使用统计。",
-                  "官网安装包和客户端更新包通过 Cloudflare CDN 分发。",
-                  "本次发布为 Windows x64；macOS 保持 0.1.12。"
-                ]
-              }
-            ],
-            "en-US": [
-              {
-                "title": "Windows update",
-                "items": [
-                  "Startup statistics use PostHog and can be disabled in Settings.",
-                  "Website downloads and client update packages use Cloudflare CDN.",
-                  "This release is for Windows x64; macOS remains on 0.1.12."
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "publishedAt": "2026-10-29T16:29:44.612673+00:00",
-      "sourceRepository": "disda/offlineocr",
-      "sourceCommit": "c4a74fe3eebe95e1d6f53c1fa8ad0ba4d40f105c",
-      "sourceWorktreeDirty": false
+      "version": "0.1.18",
+      "build": 131
     }
   },
   "changelog": [
+    {
+      "version": "0.1.18",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "更新",
+            "items": [
+              "修复部分视频拖到尾部后无法正确结束或重播的问题。",
+              "统一图片与视频的切换过渡，改善视频待播与播放交互。",
+              "根据解码能力开放 HEIC 格式入口。",
+              "明确更新重启入口，并提供官网下载提示。",
+              "恢复公开发布以来的完整更新记录。"
+            ]
+          },
+          {
+            "title": "macOS",
+            "items": [
+              "修复部分视频拖到尾部后无法正确结束或重播的问题。",
+              "统一图片与视频的切换过渡，改善视频待播与播放交互。",
+              "根据解码能力开放 HEIC 格式入口。",
+              "明确更新重启入口，并提供官网下载提示。",
+              "恢复公开发布以来的完整更新记录。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Changes",
+            "items": [
+              "Fix ending and replaying videos whose final frames exceed the declared duration.",
+              "Unify image and video transitions and improve video loading and playback interactions.",
+              "Enable HEIC entry points according to decoding capabilities.",
+              "Clarify restart-to-update controls and provide a website download hint.",
+              "Restore the complete public release history."
+            ]
+          },
+          {
+            "title": "macOS",
+            "items": [
+              "Fix ending and replaying videos whose final frames exceed the declared duration.",
+              "Unify image and video transitions and improve video loading and playback interactions.",
+              "Enable HEIC entry points according to decoding capabilities.",
+              "Clarify restart-to-update controls and provide a website download hint.",
+              "Restore the complete public release history."
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.17",
       "sections": {
@@ -112,6 +99,7 @@
     },
     {
       "version": "0.1.16",
+      "date": "2026-10-30",
       "sections": {
         "zh-CN": [
           {
@@ -138,44 +126,149 @@
           }
         ]
       }
+    },
+    {
+      "version": "0.1.15",
+      "date": "2026-10-30",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "更新",
+            "items": [
+              "更新检查和安装包下载默认使用 Cloudflare 官网线路，可在设置中切换至 GitHub 备用线路。",
+              "皮肤支持跟随系统，修复浅色与深色切换后的样式残留。",
+              "视频倍速改为图标按钮，播放控制条在空闲或鼠标移出时自动隐藏。",
+              "启动统计统一直连 PostHog，记录当前客户端版本、系统和架构，可在设置中关闭。",
+              "保留 macOS 13.4+ Apple Silicon 与 Intel 双架构安装包，沿用发布者签名更新。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Changes",
+            "items": [
+              "Check for updates and download packages through the Cloudflare website route by default, with GitHub available in Settings.",
+              "Follow the system appearance and fix stale styling when switching between light and dark themes.",
+              "Use an icon for playback speed and hide video controls when idle or when the pointer leaves.",
+              "Send optional startup statistics directly to PostHog with the current app version, OS and architecture.",
+              "Retain macOS 13.4+ Apple Silicon and Intel packages with publisher-signed updates."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.14",
+      "date": "2026-10-29",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "更新",
+            "items": [
+              "- 下载更新期间隐藏取消按钮、禁止切换线路，退出时提示并保留已下载内容。",
+              "- 下载完成后可重启以静默安装新版；安装前重新校验安装包，安装失败不会反复自动安装。",
+              "- 修复 Windows 更新记录显示，官网按访问设备默认选择 Windows 或 Mac 下载。",
+              "- 本次发布为 Windows x64；macOS 保持 0.1.12。",
+              "安装包通过 Cloudflare CDN 分发，GitHub 提供备用下载。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Changes",
+            "items": [
+              "WePic Windows 0.1.14"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.13",
+      "date": "2026-10-29",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "更新",
+            "items": [
+              "Windows 0.1.13：启动统计改为直连 PostHog，下载和更新使用 Cloudflare CDN。",
+              "macOS 安装包和自动更新身份仍为 0.1.12。本次仅发布 Windows x64 0.1.13。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Changes",
+            "items": [
+              "Windows 0.1.13: startup statistics connect directly to PostHog; downloads and updates use Cloudflare CDN."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.12",
+      "date": "2026-10-24",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "初始版本",
+            "items": [
+              "WePic 初始版本发布。",
+              "支持图片浏览与基础编辑、视频及实况照片播放。",
+              "支持本地文字提取，可配置 AI 服务进行识别、润色与翻译。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Initial release",
+            "items": [
+              "Initial release of WePic.",
+              "Browse and edit images, and play videos and Live Photos.",
+              "Extract text locally, with optional AI services for recognition, rewriting and translation."
+            ]
+          }
+        ]
+      }
     }
   ],
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 129,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.17",
-  "publishedAt": "2026-10-30T23:08:20.202376+00:00",
+  "build": 131,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.18",
+  "publishedAt": "2026-10-31T07:35:23.294709+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.17/WePic-0.1.17-macOS-arm64.zip",
-      "size": 57704376,
-      "sha256": "0abe556364908ff20311bca2bdbd96021c0e0adb26c0073fe4c90856ad2178eb",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.18/WePic-0.1.18-macOS-arm64.zip",
+      "size": 57716742,
+      "sha256": "30bcda39303b60af8a4ccc53155958078dddbf0fbd14c5e37798254cde0c345e",
       "minimumOS": "13.4",
-      "version": "0.1.17",
-      "build": 129
+      "version": "0.1.18",
+      "build": 131
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.14/WePicSetup-0.1.14-x64.exe",
-      "size": 64559100,
-      "sha256": "1a76b5a22b55160894afdbdb57cc4c01bd0ed862210cd658a48a79e5526b331e",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.18/WePicSetup-0.1.18-x64.exe",
+      "size": 64569796,
+      "sha256": "79000b6620bfce6b22c67f1946649691eb9f6515d031dd8a98448e56b351f85a",
       "minimumOS": "10.0.18362",
-      "version": "0.1.14",
-      "build": 126
+      "version": "0.1.18",
+      "build": 131
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.17/WePic-0.1.17-macOS-x86_64.zip",
-      "size": 59467098,
-      "sha256": "1a8b8ce4ffca20417c6888220a492da7426a35d16fb6b2eab92c2dc1013d57c5",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.18/WePic-0.1.18-macOS-x86_64.zip",
+      "size": 59478076,
+      "sha256": "c0d51efebe91069de007e2f22cc13b66ade17ba898ec925855add216084e87f9",
       "minimumOS": "13.4",
-      "version": "0.1.17",
-      "build": 129
+      "version": "0.1.18",
+      "build": 131
     }
   },
-  "sourceCommit": "29f7b3746b4443156005a7557b0b447fbc32ff5f",
+  "sourceCommit": "a562996ef73b5447c761a3d969a65f5bc49c00fd",
   "sourceRepository": "disda/offlineocr",
   "sourceWorktreeDirty": false
 }
