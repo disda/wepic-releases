@@ -3,8 +3,8 @@
   "tag": "v0.1.18",
   "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.18",
   "notes": {
-    "zh-CN": "修复视频尾帧结束与重播，改善媒体切换、HEIC 入口与更新重启提示。\n\nmacOS: 改善媒体切换与 HEIC 支持，完善更新重启提示和完整更新记录。",
-    "en-US": "Fix video end-frame replay, improve media transitions, HEIC entry points and update restart hints.\n\nmacOS: Improve media transitions, HEIC support, update restart controls and complete release history."
+    "zh-CN": "修复视频尾帧结束与重播，改善媒体切换、HEIC 入口与更新重启提示。",
+    "en-US": "Fix video end-frame replay, improve media transitions, HEIC entry points and update restart hints."
   },
   "windows": {
     "x64": {
@@ -32,31 +32,11 @@
               "明确更新重启入口，并提供官网下载提示。",
               "恢复公开发布以来的完整更新记录。"
             ]
-          },
-          {
-            "title": "macOS",
-            "items": [
-              "修复部分视频拖到尾部后无法正确结束或重播的问题。",
-              "统一图片与视频的切换过渡，改善视频待播与播放交互。",
-              "根据解码能力开放 HEIC 格式入口。",
-              "明确更新重启入口，并提供官网下载提示。",
-              "恢复公开发布以来的完整更新记录。"
-            ]
           }
         ],
         "en-US": [
           {
             "title": "Changes",
-            "items": [
-              "Fix ending and replaying videos whose final frames exceed the declared duration.",
-              "Unify image and video transitions and improve video loading and playback interactions.",
-              "Enable HEIC entry points according to decoding capabilities.",
-              "Clarify restart-to-update controls and provide a website download hint.",
-              "Restore the complete public release history."
-            ]
-          },
-          {
-            "title": "macOS",
             "items": [
               "Fix ending and replaying videos whose final frames exceed the declared duration.",
               "Unify image and video transitions and improve video loading and playback interactions.",
@@ -238,7 +218,7 @@
   "channel": "stable",
   "build": 131,
   "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.18",
-  "publishedAt": "2026-10-31T07:35:23.294709+00:00",
+  "publishedAt": "2026-10-31T07:48:12.808932+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
@@ -268,7 +248,7 @@
       "build": 131
     }
   },
-  "sourceCommit": "a562996ef73b5447c761a3d969a65f5bc49c00fd",
+  "sourceCommit": "29f7b3746b4443156005a7557b0b447fbc32ff5f",
   "sourceRepository": "disda/offlineocr",
   "sourceWorktreeDirty": false
 }
