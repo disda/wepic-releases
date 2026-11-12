@@ -1,24 +1,47 @@
 {
-  "version": "0.1.19",
-  "tag": "v0.1.19",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.19",
+  "version": "0.1.20",
+  "tag": "v0.1.20",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.20",
   "notes": {
     "zh-CN": "裁剪改为可调整的会话，支持比例预设、应用和取消，并可撤销重做。\n优化裁剪时的画布空间，并统一更新提示对话框。",
     "en-US": "Crop with an adjustable selection, aspect ratio presets, apply and cancel, and undo or redo.\nImprove canvas spacing during cropping and unify update dialogs."
   },
   "windows": {
     "x64": {
-      "file": "WePicSetup-0.1.18-x64.exe",
-      "size": 64569796,
-      "sha256": "79000b6620bfce6b22c67f1946649691eb9f6515d031dd8a98448e56b351f85a",
+      "file": "WePicSetup-0.1.20-x64.exe",
+      "size": 64916810,
+      "sha256": "695e1e44ed54093934f69e6da38f25b851c071bc76fa54746fe31ea7043e183a",
       "urls": [
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.18/WePicSetup-0.1.18-x64.exe"
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.20/WePicSetup-0.1.20-x64.exe"
       ],
-      "version": "0.1.18",
-      "build": 131
+      "version": "0.1.20",
+      "build": 176
     }
   },
   "changelog": [
+    {
+      "version": "0.1.20",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "Windows x64 更新",
+            "items": [
+              "裁剪改为可调整的会话，支持比例预设、应用和取消，并可撤销重做。",
+              "优化裁剪时的画布空间，并统一更新提示对话框。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Windows x64 changes",
+            "items": [
+              "Crop with an adjustable selection, aspect ratio presets, apply and cancel, and undo or redo.",
+              "Improve canvas spacing during cropping and unify update dialogs."
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.19",
       "sections": {
@@ -239,9 +262,9 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 132,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.19",
-  "publishedAt": "2026-11-11T15:53:17.027487+00:00",
+  "build": 176,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.20",
+  "publishedAt": "2026-11-12T03:52:14.962641+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
@@ -254,12 +277,12 @@
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.18/WePicSetup-0.1.18-x64.exe",
-      "size": 64569796,
-      "sha256": "79000b6620bfce6b22c67f1946649691eb9f6515d031dd8a98448e56b351f85a",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.20/WePicSetup-0.1.20-x64.exe",
+      "size": 64916810,
+      "sha256": "695e1e44ed54093934f69e6da38f25b851c071bc76fa54746fe31ea7043e183a",
       "minimumOS": "10.0.18362",
-      "version": "0.1.18",
-      "build": 131
+      "version": "0.1.20",
+      "build": 176
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
