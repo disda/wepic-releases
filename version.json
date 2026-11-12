@@ -1,10 +1,10 @@
 {
-  "version": "0.1.18",
-  "tag": "v0.1.18",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.18",
+  "version": "0.1.19",
+  "tag": "v0.1.19",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.19",
   "notes": {
-    "zh-CN": "修复视频尾帧结束与重播，改善媒体切换、HEIC 入口与更新重启提示。",
-    "en-US": "Fix video end-frame replay, improve media transitions, HEIC entry points and update restart hints."
+    "zh-CN": "裁剪改为可调整的会话，支持比例预设、应用和取消，并可撤销重做。\n优化裁剪时的画布空间，并统一更新提示对话框。",
+    "en-US": "Crop with an adjustable selection, aspect ratio presets, apply and cancel, and undo or redo.\nImprove canvas spacing during cropping and unify update dialogs."
   },
   "windows": {
     "x64": {
@@ -19,6 +19,29 @@
     }
   },
   "changelog": [
+    {
+      "version": "0.1.19",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "更新",
+            "items": [
+              "裁剪改为可调整的会话，支持比例预设、应用和取消，并可撤销重做。",
+              "优化裁剪时的画布空间，并统一更新提示对话框。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Changes",
+            "items": [
+              "Crop with an adjustable selection, aspect ratio presets, apply and cancel, and undo or redo.",
+              "Improve canvas spacing during cropping and unify update dialogs."
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.18",
       "sections": {
@@ -216,18 +239,18 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 131,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.18",
-  "publishedAt": "2026-10-31T07:48:12.808932+00:00",
+  "build": 132,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.19",
+  "publishedAt": "2026-11-11T15:53:17.027487+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.18/WePic-0.1.18-macOS-arm64.zip",
-      "size": 57716742,
-      "sha256": "30bcda39303b60af8a4ccc53155958078dddbf0fbd14c5e37798254cde0c345e",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.19/WePic-0.1.19-macOS-arm64.zip",
+      "size": 57723815,
+      "sha256": "6f8fe3204f54dc57fe9d35d31c005d7476055e17629aa35f8b3bc6eb899e9aed",
       "minimumOS": "13.4",
-      "version": "0.1.18",
-      "build": 131
+      "version": "0.1.19",
+      "build": 132
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
@@ -240,15 +263,12 @@
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.18/WePic-0.1.18-macOS-x86_64.zip",
-      "size": 59478076,
-      "sha256": "c0d51efebe91069de007e2f22cc13b66ade17ba898ec925855add216084e87f9",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.19/WePic-0.1.19-macOS-x86_64.zip",
+      "size": 59468169,
+      "sha256": "ea0828794c7e468ca77c2ab4afbc91c51090c6f4d6a999398a25edd32c9dc721",
       "minimumOS": "13.4",
-      "version": "0.1.18",
-      "build": 131
+      "version": "0.1.19",
+      "build": 132
     }
-  },
-  "sourceCommit": "29f7b3746b4443156005a7557b0b447fbc32ff5f",
-  "sourceRepository": "disda/offlineocr",
-  "sourceWorktreeDirty": false
+  }
 }
