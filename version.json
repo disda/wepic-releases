@@ -1,24 +1,47 @@
 {
-  "version": "0.1.20",
-  "tag": "v0.1.20",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.20",
+  "version": "0.1.21",
+  "tag": "v0.1.21",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.21",
   "notes": {
-    "zh-CN": "裁剪改为可调整的会话，支持比例预设、应用和取消，并可撤销重做。\n优化裁剪时的画布空间，并统一更新提示对话框。",
-    "en-US": "Crop with an adjustable selection, aspect ratio presets, apply and cancel, and undo or redo.\nImprove canvas spacing during cropping and unify update dialogs."
+    "zh-CN": "「打开图片 / 视频」与「打开文件夹」合并为一个入口：打开对话框中选中文件打开文件、选中文件夹打开文件夹，也可输入文件夹路径或点「打开此文件夹」。\n「更多」菜单新增「打开所在文件夹」，可在资源管理器中定位当前图片；图片右键菜单的同名入口保留。",
+    "en-US": "Merged 'Open image / video' and 'Open folder' into a single entry: in the open dialog, selecting a file opens it and selecting a folder opens the folder; you can also type a folder path or click 'Open this folder'.\nAdded 'Open containing folder' to the More menu to reveal the current image in Explorer; the image context menu keeps the same entry."
   },
   "windows": {
     "x64": {
-      "file": "WePicSetup-0.1.20-x64.exe",
-      "size": 64916810,
-      "sha256": "695e1e44ed54093934f69e6da38f25b851c071bc76fa54746fe31ea7043e183a",
+      "file": "WePicSetup-0.1.21-x64.exe",
+      "size": 64917730,
+      "sha256": "dab4fe6e167f030a396f9e75c9b501f4b9a66779f599a3dcf34457e7b4a8a7ec",
       "urls": [
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.20/WePicSetup-0.1.20-x64.exe"
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.21/WePicSetup-0.1.21-x64.exe"
       ],
-      "version": "0.1.20",
-      "build": 176
+      "version": "0.1.21",
+      "build": 177
     }
   },
   "changelog": [
+    {
+      "version": "0.1.21",
+      "sections": {
+        "en-US": [
+          {
+            "title": "Windows x64 changes",
+            "items": [
+              "Merged 'Open image / video' and 'Open folder' into a single entry: in the open dialog, selecting a file opens it and selecting a folder opens the folder; you can also type a folder path or click 'Open this folder'.",
+              "Added 'Open containing folder' to the More menu to reveal the current image in Explorer; the image context menu keeps the same entry."
+            ]
+          }
+        ],
+        "zh-CN": [
+          {
+            "title": "Windows x64 更新",
+            "items": [
+              "「打开图片 / 视频」与「打开文件夹」合并为一个入口：打开对话框中选中文件打开文件、选中文件夹打开文件夹，也可输入文件夹路径或点「打开此文件夹」。",
+              "「更多」菜单新增「打开所在文件夹」，可在资源管理器中定位当前图片；图片右键菜单的同名入口保留。"
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.20",
       "sections": {
@@ -262,9 +285,9 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 176,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.20",
-  "publishedAt": "2026-11-12T03:52:14.962641+00:00",
+  "build": 177,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.21",
+  "publishedAt": "2026-11-18T08:29:30.287777+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
@@ -277,12 +300,12 @@
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.20/WePicSetup-0.1.20-x64.exe",
-      "size": 64916810,
-      "sha256": "695e1e44ed54093934f69e6da38f25b851c071bc76fa54746fe31ea7043e183a",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.21/WePicSetup-0.1.21-x64.exe",
+      "size": 64917730,
+      "sha256": "dab4fe6e167f030a396f9e75c9b501f4b9a66779f599a3dcf34457e7b4a8a7ec",
       "minimumOS": "10.0.18362",
-      "version": "0.1.20",
-      "build": 176
+      "version": "0.1.21",
+      "build": 177
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
