@@ -3,8 +3,8 @@
   "tag": "v0.1.22",
   "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.22",
   "notes": {
-    "zh-CN": "首启文件关联引导支持图片、视频分组选择，避免与其他弹窗叠加；安装路径变化后自动刷新候选应用注册。\n修复多窗口重复检查更新的问题，已经下载好的更新保持待安装状态。\n修复菜单和弹窗按键被主窗口抢占，以及关闭下拉框时可能发生的崩溃；补齐反馈菜单图标。\n统一深浅主题下的弹窗和关联设置布局，改善多窗口语言切换与文字保存提示。\n完善可关闭的关联操作统计，修复会话识别和拒收事件阻塞后续上报的问题。",
-    "en-US": "Choose image and video associations in separate groups during onboarding, avoid overlapping dialogs, and refresh candidate registration when the installation path changes.\nAvoid repeated update checks when opening multiple windows and retain updates that are ready to install.\nKeep menu and dialog keys separate from viewer shortcuts, fix a possible crash when closing a dropdown, and add the missing Feedback menu icon.\nUnify dialogs and association settings across light and dark themes, and improve language changes across windows and text save prompts.\nImprove optional association statistics, session identification, and delivery of events after a rejected event."
+    "zh-CN": "「打开图片 / 视频」与「打开文件夹」合并为一个入口：打开对话框中选中文件打开文件、选中文件夹打开文件夹，也可输入文件夹路径或点「打开此文件夹」。\n「更多」菜单新增「打开所在文件夹」，可在访达中定位当前图片；图片右键菜单的同名入口保留。\n首启文件关联引导支持图片、视频分组选择，避免与其他弹窗叠加；安装路径变化后自动刷新候选应用注册。\n修复多窗口重复检查更新的问题，已经下载好的更新保持待安装状态。\n修复菜单和弹窗按键被主窗口抢占，以及关闭下拉框时可能发生的崩溃；补齐反馈菜单图标。\n统一深浅主题下的弹窗和关联设置布局，改善多窗口语言切换与文字保存提示。\n完善可关闭的关联操作统计，修复会话识别和拒收事件阻塞后续上报的问题。",
+    "en-US": "Merged 'Open image / video' and 'Open folder' into a single entry: in the open dialog, selecting a file opens it and selecting a folder opens the folder; you can also type a folder path or click 'Open this folder'.\nAdded 'Open containing folder' to the More menu to reveal the current image in Finder; the image context menu keeps the same entry.\nChoose image and video associations in separate groups during onboarding, avoid overlapping dialogs, and refresh candidate registration when the installation path changes.\nAvoid repeated update checks when opening multiple windows and retain updates that are ready to install.\nKeep menu and dialog keys separate from viewer shortcuts, fix a possible crash when closing a dropdown, and add the missing Feedback menu icon.\nUnify dialogs and association settings across light and dark themes, and improve language changes across windows and text save prompts.\nImprove optional association statistics, session identification, and delivery of events after a rejected event."
   },
   "windows": {
     "x64": {
@@ -24,8 +24,10 @@
       "sections": {
         "zh-CN": [
           {
-            "title": "Windows x64 更新",
+            "title": "更新",
             "items": [
+              "「打开图片 / 视频」与「打开文件夹」合并为一个入口：打开对话框中选中文件打开文件、选中文件夹打开文件夹，也可输入文件夹路径或点「打开此文件夹」。",
+              "「更多」菜单新增「打开所在文件夹」，可在访达中定位当前图片；图片右键菜单的同名入口保留。",
               "首启文件关联引导支持图片、视频分组选择，避免与其他弹窗叠加；安装路径变化后自动刷新候选应用注册。",
               "修复多窗口重复检查更新的问题，已经下载好的更新保持待安装状态。",
               "修复菜单和弹窗按键被主窗口抢占，以及关闭下拉框时可能发生的崩溃；补齐反馈菜单图标。",
@@ -36,8 +38,10 @@
         ],
         "en-US": [
           {
-            "title": "Windows x64 changes",
+            "title": "Changes",
             "items": [
+              "Merged 'Open image / video' and 'Open folder' into a single entry: in the open dialog, selecting a file opens it and selecting a folder opens the folder; you can also type a folder path or click 'Open this folder'.",
+              "Added 'Open containing folder' to the More menu to reveal the current image in Finder; the image context menu keeps the same entry.",
               "Choose image and video associations in separate groups during onboarding, avoid overlapping dialogs, and refresh candidate registration when the installation path changes.",
               "Avoid repeated update checks when opening multiple windows and retain updates that are ready to install.",
               "Keep menu and dialog keys separate from viewer shortcuts, fix a possible crash when closing a dropdown, and add the missing Feedback menu icon.",
@@ -314,18 +318,18 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 178,
+  "build": 179,
   "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.22",
-  "publishedAt": "2026-11-20T07:56:34.724435+00:00",
+  "publishedAt": "2026-11-20T09:06:42.374033+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.19/WePic-0.1.19-macOS-arm64.zip",
-      "size": 57723815,
-      "sha256": "6f8fe3204f54dc57fe9d35d31c005d7476055e17629aa35f8b3bc6eb899e9aed",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.22/WePic-0.1.22-macOS-arm64.zip",
+      "size": 57424992,
+      "sha256": "cb1bae18591f683d7654509070f829589e022de567d0979de3b5e97af8582237",
       "minimumOS": "13.4",
-      "version": "0.1.19",
-      "build": 132
+      "version": "0.1.22",
+      "build": 179
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
@@ -338,12 +342,12 @@
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.19/WePic-0.1.19-macOS-x86_64.zip",
-      "size": 59468169,
-      "sha256": "ea0828794c7e468ca77c2ab4afbc91c51090c6f4d6a999398a25edd32c9dc721",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.22/WePic-0.1.22-macOS-x86_64.zip",
+      "size": 59708009,
+      "sha256": "740e939f65b22469addc20adaec22632495682f796b8b5bb955b990b6d61e632",
       "minimumOS": "13.4",
-      "version": "0.1.19",
-      "build": 132
+      "version": "0.1.22",
+      "build": 179
     }
   }
 }
