@@ -1,24 +1,53 @@
 {
-  "version": "0.1.21",
-  "tag": "v0.1.21",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.21",
+  "version": "0.1.22",
+  "tag": "v0.1.22",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.22",
   "notes": {
-    "zh-CN": "「打开图片 / 视频」与「打开文件夹」合并为一个入口：打开对话框中选中文件打开文件、选中文件夹打开文件夹，也可输入文件夹路径或点「打开此文件夹」。\n「更多」菜单新增「打开所在文件夹」，可在资源管理器中定位当前图片；图片右键菜单的同名入口保留。",
-    "en-US": "Merged 'Open image / video' and 'Open folder' into a single entry: in the open dialog, selecting a file opens it and selecting a folder opens the folder; you can also type a folder path or click 'Open this folder'.\nAdded 'Open containing folder' to the More menu to reveal the current image in Explorer; the image context menu keeps the same entry."
+    "zh-CN": "首启文件关联引导支持图片、视频分组选择，避免与其他弹窗叠加；安装路径变化后自动刷新候选应用注册。\n修复多窗口重复检查更新的问题，已经下载好的更新保持待安装状态。\n修复菜单和弹窗按键被主窗口抢占，以及关闭下拉框时可能发生的崩溃；补齐反馈菜单图标。\n统一深浅主题下的弹窗和关联设置布局，改善多窗口语言切换与文字保存提示。\n完善可关闭的关联操作统计，修复会话识别和拒收事件阻塞后续上报的问题。",
+    "en-US": "Choose image and video associations in separate groups during onboarding, avoid overlapping dialogs, and refresh candidate registration when the installation path changes.\nAvoid repeated update checks when opening multiple windows and retain updates that are ready to install.\nKeep menu and dialog keys separate from viewer shortcuts, fix a possible crash when closing a dropdown, and add the missing Feedback menu icon.\nUnify dialogs and association settings across light and dark themes, and improve language changes across windows and text save prompts.\nImprove optional association statistics, session identification, and delivery of events after a rejected event."
   },
   "windows": {
     "x64": {
-      "file": "WePicSetup-0.1.21-x64.exe",
-      "size": 64917730,
-      "sha256": "dab4fe6e167f030a396f9e75c9b501f4b9a66779f599a3dcf34457e7b4a8a7ec",
+      "file": "WePicSetup-0.1.22-x64.exe",
+      "size": 64768559,
+      "sha256": "57a8597f8c22fe29e6b9909f602778dd2bc2a7b787fa7cdc085c5af950996cea",
       "urls": [
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.21/WePicSetup-0.1.21-x64.exe"
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.22/WePicSetup-0.1.22-x64.exe"
       ],
-      "version": "0.1.21",
-      "build": 177
+      "version": "0.1.22",
+      "build": 178
     }
   },
   "changelog": [
+    {
+      "version": "0.1.22",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "Windows x64 更新",
+            "items": [
+              "首启文件关联引导支持图片、视频分组选择，避免与其他弹窗叠加；安装路径变化后自动刷新候选应用注册。",
+              "修复多窗口重复检查更新的问题，已经下载好的更新保持待安装状态。",
+              "修复菜单和弹窗按键被主窗口抢占，以及关闭下拉框时可能发生的崩溃；补齐反馈菜单图标。",
+              "统一深浅主题下的弹窗和关联设置布局，改善多窗口语言切换与文字保存提示。",
+              "完善可关闭的关联操作统计，修复会话识别和拒收事件阻塞后续上报的问题。"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Windows x64 changes",
+            "items": [
+              "Choose image and video associations in separate groups during onboarding, avoid overlapping dialogs, and refresh candidate registration when the installation path changes.",
+              "Avoid repeated update checks when opening multiple windows and retain updates that are ready to install.",
+              "Keep menu and dialog keys separate from viewer shortcuts, fix a possible crash when closing a dropdown, and add the missing Feedback menu icon.",
+              "Unify dialogs and association settings across light and dark themes, and improve language changes across windows and text save prompts.",
+              "Improve optional association statistics, session identification, and delivery of events after a rejected event."
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.21",
       "sections": {
@@ -285,9 +314,9 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 177,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.21",
-  "publishedAt": "2026-11-18T08:29:30.287777+00:00",
+  "build": 178,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.22",
+  "publishedAt": "2026-11-20T07:56:34.724435+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
@@ -300,12 +329,12 @@
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.21/WePicSetup-0.1.21-x64.exe",
-      "size": 64917730,
-      "sha256": "dab4fe6e167f030a396f9e75c9b501f4b9a66779f599a3dcf34457e7b4a8a7ec",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.22/WePicSetup-0.1.22-x64.exe",
+      "size": 64768559,
+      "sha256": "57a8597f8c22fe29e6b9909f602778dd2bc2a7b787fa7cdc085c5af950996cea",
       "minimumOS": "10.0.18362",
-      "version": "0.1.21",
-      "build": 177
+      "version": "0.1.22",
+      "build": 178
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
