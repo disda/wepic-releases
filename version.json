@@ -1,24 +1,47 @@
 {
-  "version": "0.1.23",
-  "tag": "v0.1.23",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.23",
+  "version": "0.1.24",
+  "tag": "v0.1.24",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.24",
   "notes": {
-    "zh-CN": "大幅改善视频与实况照片的播放流畅度：启用显卡硬件解码并按显示尺寸解码，高分辨率视频播放更顺滑、CPU 占用更低，打开视频的首帧也更快。\n翻图到第一张或最后一张时，顶部会给出提示；再按一次同一方向，才会绕回另一端。\n修复浅色主题下顶部提示文字看不清的问题。",
-    "en-US": "Much smoother video and Live Photo playback: hardware-accelerated decoding and decoding at display size cut stutter and CPU usage on high-resolution videos, and the first frame appears faster.\nWhen you reach the first or last image, a hint appears at the top; press the same direction again to wrap around to the other end.\nFixed hint text being hard to read in the light theme."
+    "zh-CN": "修复实况照片播放模糊：按画布实际尺寸解码，播放清晰度恢复到视频原始分辨率\n图片打开失败时，提示原因改为跟随界面语言显示，并区分文件损坏与格式不支持",
+    "en-US": "Fixed blurry Live Photo playback: videos are now decoded at the visible canvas size, restoring the full original resolution\nImage open failure messages now follow the UI language and distinguish corrupt files from unsupported formats"
   },
   "windows": {
     "x64": {
-      "file": "WePicSetup-0.1.23-x64.exe",
-      "size": 65113508,
-      "sha256": "7022290be6863af0bbc22374f880cab861f44e3be74dbaa662ce449e2ef3c8b2",
+      "file": "WePicSetup-0.1.24-x64.exe",
+      "size": 65110416,
+      "sha256": "824d923823c4b8446161f98918c2d4bf51e02615f451adc92d1214a82f7dc78c",
       "urls": [
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.23/WePicSetup-0.1.23-x64.exe"
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.24/WePicSetup-0.1.24-x64.exe"
       ],
-      "version": "0.1.23",
-      "build": 182
+      "version": "0.1.24",
+      "build": 185
     }
   },
   "changelog": [
+    {
+      "version": "0.1.24",
+      "sections": {
+        "zh-CN": [
+          {
+            "title": "更新",
+            "items": [
+              "修复实况照片播放模糊：按画布实际尺寸解码，播放清晰度恢复到视频原始分辨率",
+              "图片打开失败时，提示原因改为跟随界面语言显示，并区分文件损坏与格式不支持"
+            ]
+          }
+        ],
+        "en-US": [
+          {
+            "title": "Changes",
+            "items": [
+              "Fixed blurry Live Photo playback: videos are now decoded at the visible canvas size, restoring the full original resolution",
+              "Image open failure messages now follow the UI language and distinguish corrupt files from unsupported formats"
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.23",
       "sections": {
@@ -343,9 +366,9 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 183,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.23",
-  "publishedAt": "2026-11-24T09:54:10.038229+00:00",
+  "build": 185,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.24",
+  "publishedAt": "2026-11-24T20:52:43.613298+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
@@ -358,12 +381,12 @@
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.23/WePicSetup-0.1.23-x64.exe",
-      "size": 65113508,
-      "sha256": "7022290be6863af0bbc22374f880cab861f44e3be74dbaa662ce449e2ef3c8b2",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.24/WePicSetup-0.1.24-x64.exe",
+      "size": 65110416,
+      "sha256": "824d923823c4b8446161f98918c2d4bf51e02615f451adc92d1214a82f7dc78c",
       "minimumOS": "10.0.18362",
-      "version": "0.1.23",
-      "build": 182
+      "version": "0.1.24",
+      "build": 185
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
