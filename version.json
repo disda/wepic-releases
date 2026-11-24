@@ -1,24 +1,49 @@
 {
-  "version": "0.1.22",
-  "tag": "v0.1.22",
-  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.22",
+  "version": "0.1.23",
+  "tag": "v0.1.23",
+  "page": "https://github.com/disda/wepic-releases/releases/tag/v0.1.23",
   "notes": {
-    "zh-CN": "「打开图片 / 视频」与「打开文件夹」合并为一个入口：打开对话框中选中文件打开文件、选中文件夹打开文件夹，也可输入文件夹路径或点「打开此文件夹」。\n「更多」菜单新增「打开所在文件夹」，可在访达中定位当前图片；图片右键菜单的同名入口保留。\n首启文件关联引导支持图片、视频分组选择，避免与其他弹窗叠加；安装路径变化后自动刷新候选应用注册。\n修复多窗口重复检查更新的问题，已经下载好的更新保持待安装状态。\n修复菜单和弹窗按键被主窗口抢占，以及关闭下拉框时可能发生的崩溃；补齐反馈菜单图标。\n统一深浅主题下的弹窗和关联设置布局，改善多窗口语言切换与文字保存提示。\n完善可关闭的关联操作统计，修复会话识别和拒收事件阻塞后续上报的问题。",
-    "en-US": "Merged 'Open image / video' and 'Open folder' into a single entry: in the open dialog, selecting a file opens it and selecting a folder opens the folder; you can also type a folder path or click 'Open this folder'.\nAdded 'Open containing folder' to the More menu to reveal the current image in Finder; the image context menu keeps the same entry.\nChoose image and video associations in separate groups during onboarding, avoid overlapping dialogs, and refresh candidate registration when the installation path changes.\nAvoid repeated update checks when opening multiple windows and retain updates that are ready to install.\nKeep menu and dialog keys separate from viewer shortcuts, fix a possible crash when closing a dropdown, and add the missing Feedback menu icon.\nUnify dialogs and association settings across light and dark themes, and improve language changes across windows and text save prompts.\nImprove optional association statistics, session identification, and delivery of events after a rejected event."
+    "zh-CN": "大幅改善视频与实况照片的播放流畅度：启用显卡硬件解码并按显示尺寸解码，高分辨率视频播放更顺滑、CPU 占用更低，打开视频的首帧也更快。\n翻图到第一张或最后一张时，顶部会给出提示；再按一次同一方向，才会绕回另一端。\n修复浅色主题下顶部提示文字看不清的问题。",
+    "en-US": "Much smoother video and Live Photo playback: hardware-accelerated decoding and decoding at display size cut stutter and CPU usage on high-resolution videos, and the first frame appears faster.\nWhen you reach the first or last image, a hint appears at the top; press the same direction again to wrap around to the other end.\nFixed hint text being hard to read in the light theme."
   },
   "windows": {
     "x64": {
-      "file": "WePicSetup-0.1.22-x64.exe",
-      "size": 64768559,
-      "sha256": "57a8597f8c22fe29e6b9909f602778dd2bc2a7b787fa7cdc085c5af950996cea",
+      "file": "WePicSetup-0.1.23-x64.exe",
+      "size": 65113508,
+      "sha256": "7022290be6863af0bbc22374f880cab861f44e3be74dbaa662ce449e2ef3c8b2",
       "urls": [
-        "https://github.com/disda/wepic-releases/releases/download/v0.1.22/WePicSetup-0.1.22-x64.exe"
+        "https://github.com/disda/wepic-releases/releases/download/v0.1.23/WePicSetup-0.1.23-x64.exe"
       ],
-      "version": "0.1.22",
-      "build": 178
+      "version": "0.1.23",
+      "build": 182
     }
   },
   "changelog": [
+    {
+      "version": "0.1.23",
+      "sections": {
+        "en-US": [
+          {
+            "title": "Changes",
+            "items": [
+              "Much smoother video and Live Photo playback: hardware-accelerated decoding and decoding at display size cut stutter and CPU usage on high-resolution videos, and the first frame appears faster.",
+              "When you reach the first or last image, a hint appears at the top; press the same direction again to wrap around to the other end.",
+              "Fixed hint text being hard to read in the light theme."
+            ]
+          }
+        ],
+        "zh-CN": [
+          {
+            "title": "更新",
+            "items": [
+              "大幅改善视频与实况照片的播放流畅度：启用显卡硬件解码并按显示尺寸解码，高分辨率视频播放更顺滑、CPU 占用更低，打开视频的首帧也更快。",
+              "翻图到第一张或最后一张时，顶部会给出提示；再按一次同一方向，才会绕回另一端。",
+              "修复浅色主题下顶部提示文字看不清的问题。"
+            ]
+          }
+        ]
+      }
+    },
     {
       "version": "0.1.22",
       "sections": {
@@ -318,9 +343,9 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 179,
-  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.22",
-  "publishedAt": "2026-11-20T09:06:42.374033+00:00",
+  "build": 182,
+  "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.23",
+  "publishedAt": "2026-11-24T09:08:09.105149+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
@@ -333,12 +358,12 @@
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.22/WePicSetup-0.1.22-x64.exe",
-      "size": 64768559,
-      "sha256": "57a8597f8c22fe29e6b9909f602778dd2bc2a7b787fa7cdc085c5af950996cea",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.23/WePicSetup-0.1.23-x64.exe",
+      "size": 65113508,
+      "sha256": "7022290be6863af0bbc22374f880cab861f44e3be74dbaa662ce449e2ef3c8b2",
       "minimumOS": "10.0.18362",
-      "version": "0.1.22",
-      "build": 178
+      "version": "0.1.23",
+      "build": 182
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
