@@ -343,18 +343,18 @@
   "schemaVersion": 1,
   "product": "wepic",
   "channel": "stable",
-  "build": 182,
+  "build": 183,
   "url": "https://github.com/disda/wepic-releases/releases/tag/v0.1.23",
-  "publishedAt": "2026-11-24T09:08:09.105149+00:00",
+  "publishedAt": "2026-11-24T09:54:10.038229+00:00",
   "assets": {
     "macos-arm64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.22/WePic-0.1.22-macOS-arm64.zip",
-      "size": 57424992,
-      "sha256": "cb1bae18591f683d7654509070f829589e022de567d0979de3b5e97af8582237",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.23/WePic-0.1.23-macOS-arm64.zip",
+      "size": 57429505,
+      "sha256": "e655ae14db2043d8760ef745be256f3292a5578c9be2096caf056ba3d17288cd",
       "minimumOS": "13.4",
-      "version": "0.1.22",
-      "build": 179
+      "version": "0.1.23",
+      "build": 183
     },
     "windows-x86_64-direct": {
       "kind": "inno-setup",
@@ -367,12 +367,12 @@
     },
     "macos-x86_64-direct": {
       "kind": "app-zip",
-      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.22/WePic-0.1.22-macOS-x86_64.zip",
-      "size": 59708009,
-      "sha256": "740e939f65b22469addc20adaec22632495682f796b8b5bb955b990b6d61e632",
+      "url": "https://github.com/disda/wepic-releases/releases/download/v0.1.23/WePic-0.1.23-macOS-x86_64.zip",
+      "size": 59711882,
+      "sha256": "944af45ed7cd55a91a19aef1a2b3a10bd6a111e81800f61bbd2b2bbfaa114a20",
       "minimumOS": "13.4",
-      "version": "0.1.22",
-      "build": 179
+      "version": "0.1.23",
+      "build": 183
     }
   }
 }
